@@ -1,0 +1,237 @@
+html
+{
+    height: 100%;
+    font-size: 10px;
+}
+
+body
+{
+    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 400;
+    font-stretch: normal;
+    display: block;
+    color: #bbbbbb;
+    background-color: #424040;
+}
+
+.sub
+{
+    font-size: 0.8em;
+    vertical-align: super;
+}
+
+.container
+{
+    display: block;
+    width: 90%;
+    max-width: 1100px;
+    padding: 0.5rem;
+    margin: 0 auto;
+    background-color: #bbbbbc;
+    box-shadow: 0.2rem 0.4rem 1rem 0rem rgba(32,32,32,0.15);
+}
+
+.permalink
+{
+    float: right;
+    display: inline-block;
+    font-size: 0.7em;
+}
+
+header
+{
+    display: block;
+    width: 90%;
+    max-width: 1100px;
+    padding: 0 0.5rem;
+    margin: 0 auto;
+    background-color: #744;
+    font-weight: 700;
+    vertical-align: middle;
+    box-shadow: 0.2em 0.8em 1em 0em rgba(32,32,32,0.15);
+    z-index: 5;
+    color: #e8e8ef;
+}
+nav
+{
+    display: block;
+    width: 90%;
+    max-width: 1100px;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    margin: 0 auto;
+    background-color: #ededef;
+    list-style-type: square;
+    box-shadow: 0.2em 0.4em 2.0em 0em rgba(32,32,32,0.1);
+    z-index: 10;
+}
+
+footer
+{
+    display: block;
+    width: 90%;
+    max-width: 1100px;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    margin: 0 auto;
+    background-color: #744;
+    list-style-type: square;
+    box-shadow: 0.2em 0.4em 2.0em 0em rgba(32,32,32,0.1);
+    z-index: 10;
+    color: black;
+    line-height: 1.3em;
+}
+
+
+footer h2
+{
+    color: #f8deb7;
+    padding: 4rem 4.25rem 0rem 4.25rem;
+    margin: 2rem;
+}
+
+footer p, footer ul
+{
+    padding: 0rem 4.25rem 0rem 4.25rem;
+    margin: 2rem;
+    color: #ccb3b3;
+}
+
+footer a
+{
+    color: #84c6ea;
+}
+
+a
+{
+    text-decoration: none;
+    color: #5050c0;
+    font-weight: 700;
+}
+
+a:hover
+{
+    color: #5000c0;
+    text-decoration: underline;
+}
+
+.item-nav
+{
+    padding: 0.32em;
+    margin: 1rem 8rem 1rem 8rem;
+    display: list-item;
+}
+
+h1
+{
+    font-size: 2.38rem;
+    padding: 1.2rem;
+    margin: 0em 0em 2.4rem 1.2rem;
+    color: #444;
+}
+
+h2
+{
+    font-size: 1.9rem;
+    padding: 0.34rem;
+    margin: 4rem 0rem 1rem -0.5rem;
+    color: #444;
+}
+
+p
+{
+    padding: 1rem 2rem;
+    padding: 1rem 2rem;
+    max-width: 80rem;
+}
+
+ol
+{
+    margin: 0.85rem;
+}
+
+li
+{
+    display: list-item;
+    list-style: square;
+    margin: 0rem 0rem 0rem 6rem;
+    padding: 0.34rem;
+}
+
+strong
+{
+    font-weight: 700;
+}
+
+em
+{
+    font-style:italic;
+}
+
+.prettyprint
+{
+    font-family: "Inconsolata", "Courier New", "Courier", monospace, sans-serif;
+    color: #883900;
+}
+
+pre
+{
+    font-family: "Inconsolata", "Courier New", "Courier", monospace, sans-serif;
+    padding: 0rem;
+    margin: 1.7rem;
+    font-size: 1.53rem;
+    line-height: 1.7rem;
+    box-shadow: inset 0.15rem 0.3rem 1.5rem 0rem rgba(0,0,0,0.2);
+}
+.idiom
+{
+    font-size: 1.7rem;
+    color: #222;
+    background-color: #ededef;
+    display: block;
+    padding: 8rem 6rem;
+    margin: 2.4rem;
+    line-height: 2.5rem;
+    box-shadow: 0.17rem 0.34rem 1.7rem 0rem rgba(32,32,32,0.15);
+}
+
+#logo
+{
+    position: relative;
+    display: inline-block;
+    left: -0.5rem;
+    vertical-align: bottom;
+}
+
+#title-container
+{
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 4.3rem 1rem 4.3rem 1rem;
+}
+
+#title
+{
+    font-size: 2.3rem;
+    line-height: 1em;
+}
+
+#sub-title
+{
+    font-size: 0.5em;
+    font-style: italic;
+    font-weight: normal;
+    color: #b37777;
+}
+/*
+#contributors ul
+{
+    margin: 0rem 0rem 5rem 5rem;
+    color: white;
+}
+
+#contributors li
+{
+    color: white;
+}
+*/

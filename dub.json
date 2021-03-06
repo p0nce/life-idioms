@@ -1,0 +1,8 @@
+{
+	"name": "this-self",
+    "dependencies":
+    {
+        "dmarkdown": "~>0.0",
+		"dateparser": "~>3.0"
+    }
+}
