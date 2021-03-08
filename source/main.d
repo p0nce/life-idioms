@@ -24,7 +24,7 @@ public:
 
     string title()
     {
-        return markdownFile[7..$-3];
+        return markdownFile[9..$-3];
     }
 
     string anchorName()
