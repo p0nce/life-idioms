@@ -1,4 +1,4 @@
-this.self
-=========
+life-idioms
+===========
 
-This is a personal log. All topics.
+This is a personal log with a base of d-idioms. All topics.
