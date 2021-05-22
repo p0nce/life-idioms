@@ -128,7 +128,7 @@ void main(string[] args)
                 push("head");
 
                     writeln("<meta charset=\"utf-8\">");
-                    writeln("<meta name=\"description\" content=\"this.self, personal log.\">");
+                    writeln("<meta name=\"description\" content=\"life-idioms, get out of the matrix.\">");
                     push("style", "type=\"text/css\"  media=\"all\" ");
                         appendRawFile("reset.css");
                         appendRawFile("common.css");
@@ -150,10 +150,10 @@ void main(string[] args)
 
                         push("div", "id=\"title-container\"");
                             push("div", "id=\"title\"");
-                                writeln("this.self");
+                                writeln("life-idioms");
                                 write("<br>");
                                 push("div", "id=\"sub-title\"");
-                                    write("Where shit hits the fans.");
+                                    write("An evolving rant.");
                                 pop;
                             pop();
                         pop;
