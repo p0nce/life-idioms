@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+<meta name="description" content="life-idioms, get out of the matrix.">
+<style type="text/css"  media="all" >/* Eric Meyer's Reset CSS v2.0 - http://cssreset.com */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+html
+{
+    height: 100%;
+    font-size: 10px;
+}
+
+body
+{
+    font-family: "HelveticaNeue", "Helvetica Neue", "HelveticaNeueRoman", "HelveticaNeue-Roman", "Helvetica Neue Roman", 'TeXGyreHerosRegular', "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-weight: 400;
+    font-stretch: normal;
+    display: block;
+    color: #bbbbbb;
+    background-color: #424040;
+}
+
+.sub
+{
+    font-size: 0.8em;
+    vertical-align: super;
+}
+
+.container
+{
+    display: block;
+    width: 90%;
+    max-width: 1100px;
+    padding: 0.5rem;
+    margin: 0 auto;
+    background-color: #bbbbbc;
+    box-shadow: 0.2rem 0.4rem 1rem 0rem rgba(32,32,32,0.15);
+}
+
+.permalink
+{
+    float: right;
+    display: inline-block;
+    font-size: 0.7em;
+}
+
+header
+{
+    display: block;
+    width: 90%;
+    max-width: 1100px;
+    padding: 0 0.5rem;
+    margin: 0 auto;
+    background-color: #744;
+    font-weight: 700;
+    vertical-align: middle;
+    box-shadow: 0.2em 0.8em 1em 0em rgba(32,32,32,0.15);
+    z-index: 5;
+    color: #e8e8ef;
+}
+nav
+{
+    display: block;
+    width: 90%;
+    max-width: 1100px;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    margin: 0 auto;
+    background-color: #ededef;
+    list-style-type: square;
+    box-shadow: 0.2em 0.4em 2.0em 0em rgba(32,32,32,0.1);
+    z-index: 10;
+}
+
+footer
+{
+    display: block;
+    width: 90%;
+    max-width: 1100px;
+    font-size: 1.6rem;
+    padding: 0.5rem;
+    margin: 0 auto;
+    background-color: #744;
+    list-style-type: square;
+    box-shadow: 0.2em 0.4em 2.0em 0em rgba(32,32,32,0.1);
+    z-index: 10;
+    color: black;
+    line-height: 1.3em;
+}
+
+
+footer h2
+{
+    color: #f8deb7;
+    padding: 4rem 4.25rem 0rem 4.25rem;
+    margin: 2rem;
+}
+
+footer p, footer ul
+{
+    padding: 0rem 4.25rem 0rem 4.25rem;
+    margin: 2rem;
+    color: #ccb3b3;
+}
+
+footer a
+{
+    color: #84c6ea;
+}
+
+a
+{
+    text-decoration: none;
+    color: #5050c0;
+    font-weight: 700;
+}
+
+a:hover
+{
+    color: #5000c0;
+    text-decoration: underline;
+}
+
+.item-nav
+{
+    padding: 0.32em;
+    margin: 1rem 8rem 1rem 8rem;
+    display: list-item;
+}
+
+h1
+{
+    font-size: 2.38rem;
+    padding: 1.2rem;
+    margin: 0em 0em 2.4rem 1.2rem;
+    color: #444;
+}
+
+h2
+{
+    font-size: 1.9rem;
+    padding: 0.34rem;
+    margin: 4rem 0rem 1rem -0.5rem;
+    color: #444;
+}
+
+p
+{
+    padding: 1rem 2rem;
+    padding: 1rem 2rem;
+    max-width: 80rem;
+}
+
+ol
+{
+    margin: 0.85rem;
+}
+
+li
+{
+    display: list-item;
+    list-style: square;
+    margin: 0rem 0rem 0rem 6rem;
+    padding: 0.34rem;
+}
+
+strong
+{
+    font-weight: 700;
+}
+
+em
+{
+    font-style:italic;
+}
+
+.prettyprint
+{
+    font-family: "Inconsolata", "Courier New", "Courier", monospace, sans-serif;
+    color: #883900;
+}
+
+pre
+{
+    font-family: "Inconsolata", "Courier New", "Courier", monospace, sans-serif;
+    padding: 0rem;
+    margin: 1.7rem;
+    font-size: 1.53rem;
+    line-height: 1.7rem;
+    box-shadow: inset 0.15rem 0.3rem 1.5rem 0rem rgba(0,0,0,0.2);
+}
+.idiom
+{
+    font-size: 1.7rem;
+    color: #222;
+    background-color: #ededef;
+    display: block;
+    padding: 8rem 6rem;
+    margin: 2.4rem;
+    line-height: 2.5rem;
+    box-shadow: 0.17rem 0.34rem 1.7rem 0rem rgba(32,32,32,0.15);
+}
+
+#logo
+{
+    position: relative;
+    display: inline-block;
+    left: -0.5rem;
+    vertical-align: bottom;
+}
+
+#title-container
+{
+    display: inline-block;
+    vertical-align: bottom;
+    margin: 4.3rem 1rem 4.3rem 1rem;
+}
+
+#title
+{
+    font-size: 2.3rem;
+    line-height: 1em;
+}
+
+#sub-title
+{
+    font-size: 0.5em;
+    font-style: italic;
+    font-weight: normal;
+    color: #b37777;
+}
+/*
+#contributors ul
+{
+    margin: 0rem 0rem 5rem 5rem;
+    color: white;
+}
+
+#contributors li
+{
+    color: white;
+}
+*/</style><title>this.self - A personal log</title></head><body><script src="highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<header><img id="logo" src="d-logo.svg"></img><div id="title-container"><div id="title">life-idioms
+<br><div id="sub-title">An evolving rant.</div></div></div></header><nav><div class="item-nav"><a href="#bof\Software-as-we-know-it-vs-idealized-forms">bof\Software as we know it vs idealized forms
+</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Created Jun 3<span class="sub">rd</span> 2021
+</span></div><div class="item-nav"><a href="#Attention-Time-Money-(ATM)">Attention Time Money (ATM)
+</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Jun 3<span class="sub">rd</span> 2021, created Mar 6<span class="sub">th</span> 2021
+</span></div><div class="item-nav"><a href="#Software-Artifacts-as-elementary-unit">Software Artifacts as elementary unit
+</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Jun 3<span class="sub">rd</span> 2021, created May 22<span class="sub">th</span> 2021
+</span></div></nav><div class="container"><a name="bof\Software-as-we-know-it-vs-idealized-forms"></a><div class="idiom"><a class="permalink" href="#bof\Software-as-we-know-it-vs-idealized-forms">Link
+</a><h1 id="software-as-we-know-it-sawki-vs-idealized-forms"> Software As We Know It (SAWKI) vs idealized forms</h1>
+<p>Is <em>Software As We Know It</em> a good base to reason about <em>Software</em>?
+</p>
+<h2 id="software-as-we-know-it-sawki"> Software As We Know It (SAWKI)</h2>
+<p>When talking about software, often we talk about <em>software as we know it</em>.
+</p>
+<p>And most software out there share earthly traits:
+</p>
+<ul>
+<li>Made by human beings, with limited memory and knowledge.
+</li>
+<li>Made with limited resources.
+</li>
+</ul>
+<p>Let's call "Pure Form software" (PFS) the software that is being made by perfect beings, without money concern.
+</p>
+<h2 id="pure-form-software-pfs"> Pure Form Software (PFS)</h2>
+<p>PFS is a non-existent form a software who would:
+</p>
+<ul>
+<li>enjoys unlimited resources.
+</li>
+<li>would be made by very intelligent, powerful general AIs, that enjoy no communication penalty when working as a team.
+</li>
+</ul>
+<p>In other words, PFS has unlimited <a href="Attention,#20Time,#20Money">ATM</a>.
+</p>
+<p>Because the postulate themselves are impossible, pure form software is neither practical nor desirable, and we'll use it as a limit case.
+</p>
+<h3 id="theorem-1-pfs-would-be-built-instantly"> Theorem 1: PFS would be built instantly</h3>
+<p>The stakeholder would hire as many AIs as needed with their unlimited resource, to make that software.
+</p>
+<h3 id="theorem-2-pfs-has-no-accidental-complexity"> Theorem 2: PFS has no "accidental" complexity</h3>
+<p>Because pure form software is built instantly, it can also be refactored instantly.
+</p>
+<h3 id="theorem-3-pfs-stick-to-market-needs-perfectly"> Theorem 3: PFS stick to market needs perfectly.</h3>
+<p>Like a sort of High Frequency Trading, but for software needs, pure form software (in a world that would permit it) would perfectly stick to market needs (liquidity).
+</p>
+<p>Consequently, it would be built near instantly and also achieve its goal.
+</p>
+<h2 id="sofware-is-made-by-human-being"> Sofware is made by human being</h2>
+<p>If we are to analyze software correctly, we have to consider the cases where aliens would have written the same software, and where they wouldn't.
+</p>
+<p>In an alien world, there are chances the sieve of Eratosthenes would be written with a similar algorithm.
+</p>
+<p>That most software we know is written by humans is correlated, but
+</p>
+<p>differentiate when being written by humans matters, and where aliens would have written the same software.
+</p>
+<h2 id="software-is-usually-made-in-a-team"> software is usually made in a team.</h2>
+</div><a name="Attention-Time-Money-(ATM)"></a><div class="idiom"><a class="permalink" href="#Attention-Time-Money-(ATM)">Link
+</a><h1 id="attention-time-money"> Attention, Time, Money</h1>
+<p>I'd like to introduce the unfortunate acronym <strong>ATM</strong> (Attention-Time-Money) as an aggregate measure of cost.<br/>For simplicity, these resources can be considered the same thing. Some authors may use the term "pain".
+</p>
+<p>Think of it as "price".
+</p>
+<h2 id="software-debt"> Software Debt</h2>
+<p>Successful software artifacts generates positive ATM instead of consuming it (negative ATM).
+</p>
+<p>If a software artifact necessitates positive ATM, it is a software <strong>debt</strong>.<br/>If a software artifact necessitates negative ATM, it is a software <strong>asset</strong>. 
+</p>
+<p>Assets and debt <em>are the same thing</em>, points on this flattened 1D axis of Attention, Time, and Money.
+</p>
+<p>Another word for asset will be <strong>successful</strong> software. 
+</p>
+<h2 id="on-getting-rich-on-getting-atm"> On getting rich / On getting ATM</h2>
+<p>An advice on getting rich given by Robert T. Kiyosaki is to acquire assets and not acquire debt: a tautology.
+</p>
+<p>A translated advice on getting successful software (positive ATM), is to acquire software assets and not acquire software debt.
+</p>
+<h2 id="atm-over-time"> ATM over time</h2>
+<p>Obviously, a software artifact consumes or generates Attention, Time, and Money differently at different part of its lifecycle.
+</p>
+<p><strong>The term "ATM" does indeed refers to its integral over the software artifact's lifetime.</strong>
+</p>
+<p>Going into details, it is the integral over infinite time, of:
+</p>
+<ul>
+<li>the immediate money production of this artifact <code class="prettyprint">M(x, t)</code>
+</li>
+<li>the immediate attention production of this artifact <code class="prettyprint">A(x, t)</code>
+</li>
+<li>the immediate time production of this artifact <code class="prettyprint">T(x, t)</code>
+</li>
+</ul>
+</div><a name="Software-Artifacts-as-elementary-unit"></a><div class="idiom"><a class="permalink" href="#Software-Artifacts-as-elementary-unit">Link
+</a><h1 id="software-artifacts-as-elementary-unit"> Software Artifacts as elementary unit</h1>
+<p>I want to reason upon any kind of software artifacts:
+</p>
+<ul>
+<li>an octet
+</li>
+<li>a for loop
+</li>
+<li>a function
+</li>
+<li>a class object
+</li>
+<li>a whole product
+</li>
+<li>a product portfolio
+</li>
+</ul>
+<p>In this blog they will all be "software artifacts".
+</p>
+<p>A <em>Software Artifact</em>:
+</p>
+<ul>
+<li><p><strong>Existence.</strong> Has a physical extent in lines of codes, documentation, or data presence <code class="prettyprint">Extent(x)</code>.<br/>  Arguably if it isn't there, then it doesn't exist.
+</p>
+</li>
+<li><p><strong>Price.</strong> For each artifact <code class="prettyprint">x</code>, we note <code class="prettyprint">ATM(x)</code> the amount of Attention/Time/Money gained by <code class="prettyprint">x</code> existing.<br/>  This is the cost to write the artifact, the cost to maintain it, selling it, etc. aggregated.
+</p>
+</li>
+</ul>
+<p>  More often than not, this price isn't known.
+</p>
+<h2 id="equality"> Equality</h2>
+<p>Two artifacts <code class="prettyprint">A</code> and <code class="prettyprint">B</code> are <strong>equal</strong> iff <code class="prettyprint">Extent(A) == Extent(B)</code>.<br/>They have equal ATM.
+</p>
+<h2 id="composition"> Composition</h2>
+<p>A software artifact is <strong>composed of</strong> other software artifacts, down to a unit level of minimum physical existence.<br/>For example, the for loop is made of the <code class="prettyprint">for</code> keyword, itself composed of <code class="prettyprint">f</code>, <code class="prettyprint">o</code>, <code class="prettyprint">r</code> characters.
+</p>
+<p>While it is difficult to think of an ATM just for a <code class="prettyprint">f</code> letter, we postulate that it exists.
+</p>
+<p>Composition is noted <code class="prettyprint">A + B</code>.
+</p>
+<h2 id="independence"> Independence</h2>
+<p>Two artifacts <code class="prettyprint">A</code> and <code class="prettyprint">B</code> are <strong>independent</strong> if for every artifact <code class="prettyprint">a</code> that compose <code class="prettyprint">A</code>, <code class="prettyprint">a</code> cannot be found composing <code class="prettyprint">B</code>.
+</p>
+<p>Example: 
+</p>
+<pre class="prettyprint"><code>Company Comcom has two completely independent software products Toto and Titi,
+that don't share a single file.
+</code></pre><p>Postulate: if <code class="prettyprint">A</code> and <code class="prettyprint">B</code> are independent, then <code class="prettyprint">ATM(A + B) = ATM(A) + ATM(B)</code>.
+</p>
+<p>Example:
+</p>
+<pre class="prettyprint"><code>The Toto product earns $1000 a month and the Titi product $2000 a month, 
+without any attention or time commitment, without sharing a single file.
+Since they are independent, ATM(Titi + Toto) = ATM(Titi) + ATM(Toto). 
+Their earnings add up independently.
+Note that we still don't know the actual value of ATM(Titi) or ATM(Toto).
+</code></pre><h2 id="decomposition-rule"> Decomposition rule</h2>
+<p>If software artifacts <code class="prettyprint">A</code> and <code class="prettyprint">B</code> are not independent, there exist 3 independent artifacts <code class="prettyprint">a</code>, <code class="prettyprint">b</code>, <code class="prettyprint">C</code> such that:
+</p>
+<ul>
+<li><code class="prettyprint">A == C + a</code>
+</li>
+<li><code class="prettyprint">B == C + b</code>
+</li>
+</ul>
+<p>In this case: <code class="prettyprint">ATM(A + B) = 2.ATM(C) + ATM(a) + ATM(b)</code>
+</p>
+<p>Example:
+</p>
+<pre class="prettyprint"><code>The Toto and Titi products now share some library code Baba.
+Toto earns $10000 a month and the Titi product only $100 a month, 
+without any attention or time commitment.
+ATM(Titi + Toto) = 2.ATM(Baba) + ATM(Toto-specific code) + ATM(Titi-specific code)
+</code></pre><p>Intuitively, we find that the most reused software artifacts have the most impact in the earnings of the company.<br/>In this case, <code class="prettyprint">ATM(Toto-specific-code)</code> is probably large, but we don't know it's exact value.
+</p>
+<h2 id="we-still-don-t-know-the-atm-value"> We still don't know the ATM value</h2>
+<p>Up to now, our proxy for knowing <code class="prettyprint">ATM(x)</code> is the very measurable <em>immediate sales generated by x</em>.
+</p>
+<p>But this is only an approximation:
+</p>
+<ul>
+<li>the full cost is the integral over time of Attention, Time and Money. Not the immediate Money generation.
+</li>
+<li>Sales do not tell the story of Time and Attention consumed by <code class="prettyprint">x</code>. A fact often lamented in "technical debt" rants.
+</li>
+</ul>
+<p><strong>While ATM is the primary measure of success in an artifact, we have only a passing understanding of its real value. Instead what is used is a short-term, partial, proxy measurement for ATM: sales.</strong>
+</p>
+</div></div><footer></footer></body></html>

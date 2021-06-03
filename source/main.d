@@ -132,9 +132,7 @@ void main(string[] args)
                     push("style", "type=\"text/css\"  media=\"all\" ");
                         appendRawFile("reset.css");
                         appendRawFile("common.css");
-                        appendRawFile("hybrid.css");
                     pop();
-                    writeln("<link href='//fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>");
 
                     push("title");
                     write("this.self - A personal log");
