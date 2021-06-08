@@ -110,7 +110,7 @@ void main(string[] args)
     Idiom[] idioms;
 
     // finds all idioms by enumarating Markdown
-    auto mdFiles = filter!`endsWith(a.name,".md")`(dirEntries("articles",SpanMode.depth));
+    auto mdFiles = filter!`endsWith(a.name,".md")`(dirEntries("articles",SpanMode.shallow));
     foreach(md; mdFiles)
         idioms ~= new Idiom(md);
 

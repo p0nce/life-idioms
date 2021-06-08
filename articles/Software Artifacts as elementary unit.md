@@ -10,15 +10,15 @@ I want to reason upon any kind of software artifacts:
 
 In this blog they will all be "software artifacts".
 
-A _Software Artifact_:
+A _Software Artifact_ has:
 
 - **Existence.** Has a physical extent in lines of codes, documentation, or data presence `Extent(x)`.
   Arguably if it isn't there, then it doesn't exist.
 
 - **Price.** For each artifact `x`, we note `ATM(x)` the amount of Attention/Time/Money gained by `x` existing.
-  This is the cost to write the artifact, the cost to maintain it, selling it, etc. aggregated.
+  This is the cost to write the artifact, the cost to maintain it, selling it, etc. aggregated over its total lifetime.
 
-  More often than not, this price isn't known.
+  More often than not, this ATM isn't known.
 
 
 ## Equality
@@ -81,6 +81,7 @@ ATM(Titi + Toto) = 2.ATM(Baba) + ATM(Toto-specific code) + ATM(Titi-specific cod
 
 Intuitively, we find that the most reused software artifacts have the most impact in the earnings of the company.
 In this case, `ATM(Toto-specific-code)` is probably large, but we don't know it's exact value.
+We _also_ don't know the split between `Baba` and `Toto-specific code`.
 
 
 ## We still don't know the ATM value
