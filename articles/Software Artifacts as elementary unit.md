@@ -1,6 +1,6 @@
 # Software Artifacts as elementary unit
 
-I want to reason upon any kind of software artifacts:
+I'd like to reason upon any kind of software artifacts:
 - an octet
 - a for loop
 - a function
@@ -8,7 +8,7 @@ I want to reason upon any kind of software artifacts:
 - a whole product
 - a product portfolio
 
-In this blog they will all be "software artifacts".
+In this blog these will be called "software artifacts".
 
 A _Software Artifact_ has:
 
@@ -23,7 +23,7 @@ A _Software Artifact_ has:
 
 ## Equality
 
-Two artifacts `A` and `B` are **equal** iff `Extent(A) == Extent(B)`.
+Two software artifacts `A` and `B` are **equal** iff `Extent(A) == Extent(B)`.
 They have equal ATM.
 
 
@@ -90,6 +90,7 @@ Up to now, our proxy for knowing `ATM(x)` is the very measurable _immediate sale
 
 But this is only an approximation:
 - the full cost is the integral over time of Attention, Time and Money. Not the immediate Money generation.
+  ATM is to software, what stocks are to companies.
 - Sales do not tell the story of Time and Attention consumed by `x`. A fact often lamented in "technical debt" rants.
 
 **While ATM is the primary measure of success in an artifact, we have only a passing understanding of its real value. Instead what is used is a short-term, partial, proxy measurement for ATM: sales.**

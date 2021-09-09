@@ -1,9 +1,10 @@
 # Attention, Time, Money
 
-I'd like to introduce the unfortunate acronym **ATM** (Attention-Time-Money) as an aggregate measure of cost.
-For simplicity, these resources can be considered the same thing. Some authors may use the term "pain".
+I'd like to introduce the unfortunate acronym **ATM** (Attention-Time-Money) as an aggregate measure of economical value of software. For simplicity, these resources can be considered the same quantity and convertible. 
 
-Think of it as "price".
+Is ATM "pain"? Is it "price"? It's better to think it as _the price of a stock_. 
+
+Much like _stocks_, the value of ATM (their "price") aggregates all future revenue/cost associated with a particular piece of software, down to the smallest unit.
 
 
 ## Software Debt
@@ -21,9 +22,16 @@ Another word for asset will be **successful** software.
 
 ## On getting rich / On getting ATM
 
-An advice on getting rich given by Robert T. Kiyosaki is to acquire assets and not acquire debt: a tautology.
+An advice on getting rich given by Robert T. Kiyosaki is to acquire assets and not acquire debt: a tautology that still deserved a book.
 
-A translated advice on getting successful software (positive ATM), is to acquire software assets and not acquire software debt.
+A translated advice on getting successful software (positive ATM), is to **acquire software assets and not acquire software debt.**
+
+
+## ATM as goal
+
+
+This define a criterion for ruling out methods.
+Given alternative A and B, **the alternative that maximize ATM is to be preferred in a sytematic way.**
 
 
 ## ATM over time
