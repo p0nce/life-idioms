@@ -4,7 +4,7 @@ In a surprising sequence of events, the month of mid-July to mid-August 2019 was
 
 - I moved and then was suspected in the murder of my former landlord.
 - Had an brief affair with someone I later fell in love with.
-- Had a scary one-hour relapse in DP;DR because of a book.
+- Had a scary one-hour relapse in [DPDR](#What-DPDR-feels-like) because of a book.
 - I released a new plug-in Panagement 2.0.
 - Moved flat.
 - People helped get back into the new flat when I locked myself out, and then stole my wallet.
