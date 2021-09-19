@@ -2,7 +2,7 @@
 	"name": "life-idioms",
     "dependencies":
     {
-        "dmarkdown": "~>0.0",
+        "commonmark-d": "~>1.0",
 		"dateparser": "~>3.0"
     }
 }
