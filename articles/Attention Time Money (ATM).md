@@ -44,3 +44,5 @@ Going into details, it is the integral over infinite time, of:
 - the immediate money production of this artifact `M(x, t)`
 - the immediate attention production of this artifact `A(x, t)`
 - the immediate time production of this artifact `T(x, t)`
+
+And I'm not sure what value we could derive from those last definitions.
