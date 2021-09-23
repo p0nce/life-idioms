@@ -2,14 +2,14 @@
 
 _DICLAIMER: Close this page now. This article isn't meant for anyone to read. You don't want to know._
 
-_This is a dangerous article to read. And it was annoying to write. I'm really just doing it to try to connect the dots. Reading about DPDR triggers a strange meditative state for me. I'm genuinely afraid to write that shit article. Only read this is you are not an anxious person. There is an interesting article [here](https://www.theatlantic.com/health/archive/2014/12/enlightenments-evil-twin/383726/) that is perfectly adequate to explain the most interesting points._
+_This is a dangerous article to read. And it was annoying to write. I'm really just doing it to try to connect the dots. Reading about DPDR triggers a strange meditative state for me. I'm genuinely scared to write that shit article. Only read this is you are not an anxious person. There is an interesting article [here](https://www.theatlantic.com/health/archive/2014/12/enlightenments-evil-twin/383726/) that is perfectly adequate to explain the most interesting points._
 
 
 ## TL;DR
 
 [DPDR](https://en.wikipedia.org/wiki/Depersonalization-derealization_disorder) is living without a personnality, and without "storytelling". What might seems at first like a curious metaphysical experience, is also a **surprisingly painful condition**.
 
-It comes in various intensity levels, light DPDR (like I have now writing that article) is really easy, and strong DPDR is a living hell.
+It comes in various intensity levels. Light DPDR features only a few symptoms, but strong DPDR is a living hell.
 
 
 ## Third person
@@ -81,7 +81,7 @@ In normal times, **concepts have a sustained existence because we continuously n
 
 Like the fast movement of the eye giving the impression of a detailed, high resolution visual world ; the fast _meaning creation_ of the brain is giving the impression of whole well-separated concepts that help understanding the world.
 
-The person experiencing DPDR see its personnality structure dissolved, because _every other thought concept was also dissolved_. They were broke down to their consistutive components, without the story-teller that makes them united.
+The person experiencing DPDR see its personnality structure dissolved, because _every other thought concept was also dissolved_. They were broke down to their constitutive components, without the story-teller that makes them united.
 
 In a way, personnality is a comforting **bubble** that sustain that meaning creation. It insulates from tons of raw, meaningless events that do not sustain the personal narrative. The Ego has a good User Experience that simplifies life for us. 
 

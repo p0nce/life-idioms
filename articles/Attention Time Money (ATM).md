@@ -31,18 +31,4 @@ A translated advice on getting successful software (positive ATM), is to **acqui
 
 
 This define a criterion for ruling out methods.
-Given alternative A and B, **the alternative that maximize ATM is to be preferred in a sytematic way.**
-
-
-## ATM over time
-
-Obviously, a software artifact consumes or generates Attention, Time, and Money differently at different part of its lifecycle.
-
-**The term "ATM" does indeed refers to its integral over the software artifact's lifetime.**
-
-Going into details, it is the integral over infinite time, of:
-- the immediate money production of this artifact `M(x, t)`
-- the immediate attention production of this artifact `A(x, t)`
-- the immediate time production of this artifact `T(x, t)`
-
-And I'm not sure what value we could derive from those last definitions.
+Given alternative A and B, **the alternative that maximize ATM is to be preferred in a sytematic way.** However, it is not measurable, and we don't have here the equivalent of a Stock Market to the value of such a stock.
