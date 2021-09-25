@@ -151,7 +151,7 @@ void main(string[] args)
                                 writeln("life-idioms");
                                 write("<br>");
                                 push("div", "id=\"sub-title\"");
-                                    write("An evolving rant.");
+                                    write("Where I try to organize ideas.");
                                 pop;
                             pop();
                         pop;
