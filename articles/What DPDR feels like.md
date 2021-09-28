@@ -1,6 +1,7 @@
 # What DPDR feels like
 
-_DICLAIMER: Close this page now. This article isn't meant for anyone to read. You don't want to know._
+
+_DICLAIMER: Close this page now. This article isn't meant for anyone to read. You don't want to know. I'm only trying to [remember](#On-being-a-former-sufferer-of-DPDR)._
 
 _This is a dangerous article to read. And it was annoying to write. I'm really just doing it to try to connect the dots. Reading about DPDR triggers a strange meditative state for me. I'm genuinely scared to write that shit article. Only read this is you are not an anxious person. There is an interesting article [here](https://www.theatlantic.com/health/archive/2014/12/enlightenments-evil-twin/383726/) that is perfectly adequate to explain the most interesting points._
 
@@ -65,14 +66,14 @@ Life under DPDR is stripped of its human elements, and as such it feels obviousl
 
 This is why I say personality is like being in a bubble: it filters information and creates meaning when there is sometimes little.
 
-When things go back to the normalcy you thought was impossible though, you will have trouble remembering what really happened and in what order while dissociated. It will seem very remote that you could have had no personnality for such a long period of time.
+When things _do_ go back to the normalcy you thought was impossible, you will have trouble remembering what really happened and in what order. It will seem very remote that you could have had no personnality for such a long period of time. Your time dissociated and non-dissociated feel like disjointed segments of life.
 
 
 ## Meaning generation has stopped
 
 It's hard to explain properly this one after so many years. I have difficulty remembering symptoms from 2007.
 
-Essentially, the forces that maintain _continuity of meaning_ for things, concepts, words, and of course your personnality (which is mental object like any other...), stop their course.
+Essentially, the forces that maintain _continuity of meaning_ for things, concepts, words, and of course your personnality (which is a mental object like any other...), stop their course.
 
 You would look at an pear, see it is of a particular pear shape, pear color, and has a word for it: "pear". 
 But none of these things form a cohesive whole around an actual "pear" concept you might previously have.
@@ -83,13 +84,13 @@ Like the fast movement of the eye giving the impression of a detailed, high reso
 
 The person experiencing DPDR see its personnality structure dissolved, because _every other thought concept was also dissolved_. They were broke down to their constitutive components, without the story-teller that makes them united.
 
-In a way, personnality is a comforting **bubble** that sustain that meaning creation. It insulates from tons of raw, meaningless events that do not sustain the personal narrative. The Ego has a good User Experience that simplifies life for us. 
+In a way, personnality is a comforting **bubble** that sustain that meaning creation. It insulates from tons of raw, meaningless events that do not sustain the personal narrative. The Ego has a good User Experience that simplifies life for us. As far as I'm concerned, it is definately a Good Thing.
 
 
 ## Art
 
 Music, films, and museums can give a lot more impression than usual. I would typically feel way more connection to music in this state.
-This is definately a positive, you get to find profoundness in pretty average things. :)
+This is definately a positive, as you get to find profoundness in pretty average things. :)
 
 
 ## When DPDR disappears
