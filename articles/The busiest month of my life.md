@@ -8,7 +8,7 @@ In a surprising sequence of events, the month of mid-July to mid-August 2019 was
 - Moved flat.
 - People helped get back into the new flat when I locked myself out, and then stole my wallet.
 
-All that happened while I didn't really care since I was in the process of releasing a product.
+All that happened while _I didn't really care_ since I was in the very important process of releasing a product.
 
-Being adventurous is not exactly a goal to me ; I consider it more like a defect.
+Being adventurous is not exactly a goal to me ; I consider it more like a fault.
 I'm thankful such a high-intensity month did not ever repeat.

@@ -7,7 +7,7 @@ While many people experience symptoms of a depersonalization/derealization disor
 
 ## My story with DPDR
 
-- **2007:** a severe 2 month episode, drug-induced comorbid with HPPD, BDD, tinnitus.
+- **2007:** a severe 2 month episode, psylocibyn-induced comorbid with HPPD, BDD, tinnitus.
   I was 19 :).
 - **2011 to 2012:** a one year burnout cycle that ended up in mild DPDR, comorbid with emotional depletion, and suicidal thoughts for the last month. It felt like forever.
 - **2019:** a one hour relapse, short but scary enough. 

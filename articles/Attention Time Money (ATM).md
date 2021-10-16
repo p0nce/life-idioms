@@ -4,19 +4,19 @@ I'd like to introduce the unfortunate acronym **ATM** (Attention-Time-Money) as 
 
 Is ATM "pain"? Is it "price"? It's better to think it as _the price of a stock_. 
 
-Much like _stocks_, the value of ATM (their "price") aggregates all future revenue/cost associated with a particular piece of software, down to the smallest unit.
+Much like _stocks_, the value of ATM (their "price") aggregates all future revenue/cost associated with a particular piece of software, [down to the smallest unit](#Software-Artifacts-as-elementary-unit).
 
 
 ## Software Debt
 
 Successful software artifacts generates positive ATM instead of consuming it (negative ATM).
 
-If a software artifact necessitates positive ATM, it is a software **debt**.
-If a software artifact necessitates negative ATM, it is a software **asset**. 
+If a software artifact has negative ATM, it is a software **debt**.
+If a software artifact has positive ATM, it is a software **asset**. 
 
 Assets and debt _are the same thing_, points on this flattened 1D axis of Attention, Time, and Money.
 
-Another word for asset will be **successful** software. 
+Another word for asset could be **successful** software, but I don't like it since it pollutes the mental images with images of what successful people do. I prefer the term of **positive ATM software**.
 
 
 
@@ -24,11 +24,13 @@ Another word for asset will be **successful** software.
 
 An advice on getting rich given by Robert T. Kiyosaki is to acquire assets and not acquire debt: a tautology that still deserved a book.
 
-A translated advice on getting successful software (positive ATM), is to **acquire software assets and not acquire software debt.**
+A translated advice on getting successful in software (positive ATM), is to **acquire software assets and not acquire software debt.**
 
 
 ## ATM as goal
 
-
 This define a criterion for ruling out methods.
 Given alternative A and B, **the alternative that maximize ATM is to be preferred in a sytematic way.** However, it is not measurable, and we don't have here the equivalent of a Stock Market to the value of such a stock.
+
+
+See: [Software Artifacts as elementary units](#Software-Artifacts-as-elementary-unit)

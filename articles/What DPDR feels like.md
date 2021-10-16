@@ -1,7 +1,7 @@
 # What DPDR feels like
 
 
-_DICLAIMER: Close this page now. This article isn't meant for anyone to read. You don't want to know. I'm only trying to [remember](#On-being-a-former-sufferer-of-DPDR)._
+_DICLAIMER: I FORMALLY DECLINE RESPONSIBILITY FOR ANY HARM THAT COULD HAPPEN FOLLOWING THE READ OF THE FOLLOWING ARTICLE. Close this page now. This article isn't meant for anyone to read. You don't want to know. I'm only trying to [remember](#On-being-a-former-sufferer-of-DPDR)._
 
 _This is a dangerous article to read. And it was annoying to write. I'm really just doing it to try to connect the dots. Reading about DPDR triggers a strange meditative state for me. I'm genuinely scared to write that shit article. Only read this is you are not an anxious person. There is an interesting article [here](https://www.theatlantic.com/health/archive/2014/12/enlightenments-evil-twin/383726/) that is perfectly adequate to explain the most interesting points._
 
