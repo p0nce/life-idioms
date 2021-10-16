@@ -30,7 +30,7 @@ A translated advice on getting successful in software (positive ATM), is to **ac
 ## ATM as goal
 
 This define a criterion for ruling out methods.
-Given alternative A and B, **the alternative that maximize ATM is to be preferred in a sytematic way.** However, it is not measurable, and we don't have here the equivalent of a Stock Market to the value of such a stock.
+Given alternative A and B, **the alternative that would maximize ATM is to be preferred in a sytematic way.** However, it is not easily measurable at all, and we don't have here the equivalent of a Stock Market to the value of such a stock.
 
 
 See: [Software Artifacts as elementary units](#Software-Artifacts-as-elementary-unit)

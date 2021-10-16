@@ -4,7 +4,7 @@ Once we have the concept of [ATM](#Attention-Time-Money-(ATM)) we can define the
 
 ## Observation
 
-Smart companies have their employees maintain "ownership" over codebases. The idea is that worker `W` knows more than anyone else about software artifact `A`. Repairing A will be less costly when `W` is doing it.
+Smart companies have their employees maintain "ownership" over codebases. The idea is that worker `W` knows more than anyone else about [software artifact](#Software-Artifacts-as-elementary-unit) `A`. Repairing A will be less costly when `W` is doing it.
 
 In economical terms, by virtue of having `W` know more about `A`, `ATM(A)` gets a higher value. 
 
@@ -57,6 +57,31 @@ Now, for all intent and purpose Ben has no real exposure to `L`. `ATM-W(x)` is 0
 
     ATM(Lf) > ATM(L) + $500
 
-`S` in this case is the real _owner_ of `L` since its ATM fraction `ATM-S` is equal to `ATM`. `S` will benefit completely from `L` losses and gains, and `W` won't be affected.
+`S` in this case is the real "owner" of `L` since its ATM fraction `ATM-S` is equal to `ATM`. `S` will benefit completely from `L` losses and gains, and `W` won't be affected.
 
 
+## Example: Idea Man
+
+_Steve has an idea and tells Walter his idea of a new piece of software A. Walter like the idea and propose to build it for only $1000. When Steve fails to sell the early result, Walter steals the code, sabotage Steve online store, and sells it for its own benefit with no additional development._
+
+In ATM terms: 
+- let `A` be the product being built
+- let `S` be the shareholder Steve 
+- let `W` be the worker Walter
+
+The hope of Steve is to get a positive ATM for himself:
+
+    ATM-S(A) > 0
+
+However if, as Steve will fail to sell the result forever it is pretty clear that ATM-S is known at: -$1000. No upside is expected for Steve forever, and salary was paid.
+
+    ATM-S(A) = -$1000
+
+For all intent and purpose Steve no exposure to `A` other than that loss.
+Walter doesn't know if `A` will be an asset (positive ATM), but he knows he gets a $1000 head start on its own share of ATM.
+
+    ATM-W(A) = ATM(A) + $1000
+
+As Walter knows that its own rate on the market is $500/day, he hopes to have a good estimate of `ATM(A)` before 2 days, so he knows whether to abandon the project or not.
+
+Obviously, a measure of ownership would need to account for the possibility of negative ATM.
