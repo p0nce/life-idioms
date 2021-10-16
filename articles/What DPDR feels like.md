@@ -46,7 +46,7 @@ Seeing a loved-one provokes no more emotion that if you had encountered a lifele
 
 Under DPDR, seeing old friends is like meeting strangers. Because - as we'll see later on - the concept of your friendship have disintegrated. _Like most other concepts._
 
-I guess this is because in situation of danger, it isn't that critical to feel in love or sad.
+I guess because in a situation of acute danger, it isn't exactly critical to feel in love or sad.
 
 
 ## "Brain fog"
