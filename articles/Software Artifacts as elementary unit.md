@@ -94,6 +94,6 @@ Because this is only an approximation:
 - the full cost is the integral over time of Attention, Time and Money. Not the immediate Money generation.
   ATM is to software, what stocks are to companies.
 - Sales do not tell the story of Time and Attention consumed by `x`. A fact often lamented in "technical debt" rants.
-- ATM is value for the world in general. Every actor actually gets [a different share of that number](#Who-owns-software?).
+- ATM is value for the world in general. Every actor actually gets [a different share of that number](#Who-owns-software?), possibly negative.
 
 **While ATM is the primary measure of success in an artifact, we have only a passing understanding of its real value. Instead what is used is often a short-term, partial, proxy measurement for ATM: sales for the shareholder.**
