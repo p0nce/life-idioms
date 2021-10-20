@@ -10,4 +10,6 @@
 
 5. In other words: not all books deserve to be written, and not all thoughts deserve to be formed. And there will be interests to pay on them too: bad books being read, or bad thoughts being maintained.
 
-Like software artifacts, thoughts should pay for themselves.
+6. In the same ways that ATM is distributed across everyone (even negatively), maintaining mental debt can be efficient for society _as a whole_, just not for the open that holds that debt.
+
+Strangely my conclusion is at odds with the premise.

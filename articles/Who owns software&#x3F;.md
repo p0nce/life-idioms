@@ -2,7 +2,13 @@
 
 Once we have the concept of [ATM](#Attention-Time-Money-(ATM)) we can define the concept of software ownership more precisely.
 
-## Observation
+
+## Observation 1
+
+The customer pays for software typically with Money, and derive some positive or negative value out of its existence.
+
+
+## Observation 2
 
 Smart companies have their employees maintain "ownership" over codebases. The idea is that worker `W` knows more than anyone else about [software artifact](#Software-Artifacts-as-elementary-unit) `A`. Repairing A will be less costly when `W` is doing it.
 
@@ -13,13 +19,24 @@ On the other hand, the company gets to be the "shareholder" and obviously pay fo
 
 ## Who owns the software?
 
-Who owns the software artifact `A`? Is it `W` or the company employing `W` to work on `A`?  
+**Who "owns" the software artifact `A`?** Is it `W` or the company employing `W` to work on `A`? Is it `C` the customer that bought it?
 
-Our proposal is that `ATM(A)` is split between the "owner"/worker `W` and the sharedholder `S`.
+Our proposal is that `ATM(A)` is typically split between:
+- the "code owner"/worker `W`,
+- the sharedholder `S`,
+- the customer `C`.
 
-    ATM(A) = ATM-W(A) + ATM-S(A)
+The new definition of ATM is that **it is the sum of individual ATM contribution of every entity:**
+```
+ATM(A) = sum[for every entity E](ATM(E, A))
+```
 
-The sum of ATM of individual actors.
+Hence:
+```
+ATM(A) = ATM-W(A) + ATM-S(A) + ATM-C(A)
+```
+
+In our split with 3 entities it is the sum of ATM of individual actors. Here is how to account for it:
 
 **`ATM-S`** (ATM for Shareholder) would contain:
 - Aggregated benefits from A existing: sales, future velocity, industry contacts, distribution opportunities...
@@ -29,11 +46,18 @@ The sum of ATM of individual actors.
   * Gain of [positive ATM knowledge](#Thoughts-should-pay-for-themselves).
   * The economical loss that stems from negative ATM knowledge.
   * The pain or pleasure derived from working with artifact A.
-- Aggregated benefits from working on A: work opportunities.
+- Aggregated benefits from working on A: eg. work opportunities.
+
+**`ATM-C`** (ATM for Customer) would contain:
+- Aggregated benefits from A existing.
+- Present and future costs from operating the software (price, brain damage, recurrent costs...)
 
 All these factors include _current and future events_.
 
-Whether W or S should be considered the "owner" of artifact A depends on the particular split. 
+Whether W, S, or C should be considered the "owner" of artifact A depends on the particular split. 
+
+**Note that this is only one of the possible value split, since S, W and C can be one and the same.**
+
 
 ## Example: Contractor
 
@@ -62,12 +86,13 @@ Now, for all intent and purpose Ben has no real exposure to `L`. `ATM-W(x)` is 0
 
 ## Example: Idea Man
 
-_Steve has an idea and tells Walter his idea of a new piece of software A. Walter like the idea and propose to build it for only $1000. When Steve fails to sell the early result, Walter steals the code, sabotage Steve online store, and sells it for its own benefit with no additional development._
+_Steve has an idea and tells Walter his idea of a new piece of software A. Walter like the idea and propose to build it for only $1000. When Steve fails to sell the early result, Walter steals the code, sabotage Steve online store, and sells it for its own benefit with no additional development. The customer of the software derive just recoup their investment, as they get $10 of value for their $10 of membership._
 
 In ATM terms: 
 - let `A` be the product being built
 - let `S` be the shareholder Steve 
 - let `W` be the worker Walter
+- let `C` be the customers (but we know that `ATM-C(A)` is 0)
 
 The hope of Steve is to get a positive ATM for himself:
 
@@ -84,4 +109,4 @@ Walter doesn't know if `A` will be an asset (positive ATM), but he knows he gets
 
 As Walter knows that its own rate on the market is $500/day, he hopes to have a good estimate of `ATM(A)` before 2 days, so he knows whether to abandon the project or not.
 
-Obviously, a measure of ownership would need to account for the possibility of negative ATM.
+Obviously, a measure of "ownership" would need to account for the possibility of negative ATM. I'm not sure if a zero ATM means no ownership either, of if the whole concept of "ownership" is moot.

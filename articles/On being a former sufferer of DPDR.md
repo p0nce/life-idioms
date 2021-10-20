@@ -2,7 +2,7 @@
 
 A few people IRL know this about me, but in the past I've been technically "mad" with the trouble known as Depersonalization / Derealization Disorder (DPDR). 
 
-While many people experience symptoms of a depersonalization/derealization disorder during their life; I have a simple theory about why few people talk about it: it is shameful and not exactly status-enhancing.
+While many people experience symptoms of a depersonalization/derealization disorder during their life; I have a simple theory about why few people talk about it: it is difficult to explain and just too shocking to tell.
 
 
 ## My story with DPDR

@@ -27,10 +27,13 @@ An advice on getting rich given by Robert T. Kiyosaki is to acquire assets and n
 A translated advice on getting successful in software (positive ATM), is to **acquire software assets and not acquire software debt.**
 
 
-## ATM as goal
+## ATM as goal?
 
 This define a criterion for ruling out methods.
-Given alternative A and B, **the alternative that would maximize ATM is to be preferred in a sytematic way.** However, it is not easily measurable at all, and we don't have here the equivalent of a Stock Market to the value of such a stock.
-
+Given alternative A and B, **the alternative that would maximize ATM would be preferred in a sytematic way.** However, it is not easily measurable at all, and we don't have here the equivalent of a Stock Market to the value of such a stock.
 
 See: [Software Artifacts as elementary units](#Software-Artifacts-as-elementary-unit)
+
+Moreover, and more critically, ATM is the amount of current and future value the software would bring to **everyone**, but this ATM is splitted, very often unevenly, amongst several entities. Whether a software artifact is a debt or an asset depends upon who is considered as owner.
+
+See: [Who owns software?](#Who-owns-software?)
