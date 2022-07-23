@@ -30,4 +30,6 @@ Those troubled periods had a disproportionate impact on my life. One of the inte
 
 [Depersonalization/Derealization Disorder (DPDR)](https://en.wikipedia.org/wiki/Depersonalization-derealization_disorder) is little-known dissociative disorder with a prevalence of 1 to 2%, often undiagnosed and underresearched. It is essentially a defense mechanism against stress, that gets somehow stuck. It goes by several names: DPDR, DDD, DDS, DPD...
 
+DPDR is strongly associated with [childhood interpersonal trauma](https://doi.org/10.1176/appi.ajp.158.7.1027).
+
 [How does DPDR feels?](#What-DPDR-feels-like)
