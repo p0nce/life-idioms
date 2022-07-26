@@ -13,7 +13,7 @@ While many people experience symptoms of a depersonalization/derealization disor
 - **2019:** a one hour relapse, short but scary enough. 
   I would read La Nausée by Sartre and it turns out the book can effectively trigger the disease temporarily for me, thanks to its play on words.
 
-I consider myself cured from 2012 to 2014 thanks to DIY [trauma processing](Processing-Traumas), a great method for a whole lot of troubles.
+I consider myself cured from 2012 to 2014 thanks to DIY [trauma processing](#DIY-Processing-Traumas), a great method for a whole lot of troubles.
 
 
 ## Why talk about it at all?
