@@ -22,10 +22,10 @@ So what did we do differently?
 - Mental framing to imagine a larger scene or crowd, or using a persona to sing.
 - Always having two songs to learn at once.
 - Exercises to _decouple_ muscles, for example rotating shoulders while humming low.
-- Quickly vary the song the student has to sing, in order to avoid some kind of static neural pathways.
+- Quickly vary the song the student has to sing, in order to avoid some kind of sterile overlearning.
 - Not reifying the act of singing, stop thinking "I'm gonna hit this note", just hit the note instead.
-- Mix of integrating topdown and detailed downtop work (for example, fixing bad vowel sounds).
-- I was always pushed on the edge of my current abilities.
+- Mix of integrating top-down and detailed bottom-up work (for example, fixing bad vowel sounds).
+- I felt like I was always pushed on the edge of my current abilities. A teaching concept explained to me much later as the [ZPD](https://en.wikipedia.org/wiki/Zone_of_proximal_development).
 
 A common theme of the course was largely _decoupling_. Marie once said she was trying to augment "neural recombination". I would go jogging, as it [helped learning](#Identify-body-chemicals).
 
@@ -56,6 +56,13 @@ The magnitudes of these eigenvectors are different. Some are more important than
 
 ## The takeaway
 
+Diagonalization is the most powerful tool in the toolbox.
+
 I later found out that this type of diagonialization is useful to all other domains, when you want to reach expertise. Intuitively, it makes sense that the best performers can identify best what is important or not in their domain.
 
 My belief is that to be an expert (or even beat the experts) you need to re-learn your domain after first exposure, and go find its true eigenvectors.
+
+
+## Critics
+
+Now that I read the above article, there was other teaching tricks involved in the singing lessons: the good use of the Zone of Proximal Development, the student-teacher relationship, the sense of community/imitation with other singers... which seems to imply that it's not all about that diagonalization concept I'm such a fan of.
