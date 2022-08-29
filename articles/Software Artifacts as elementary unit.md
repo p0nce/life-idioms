@@ -34,7 +34,7 @@ For example, the for loop is made of the `for` keyword, itself composed of `f`, 
 
 While it is difficult to think of an ATM just for a `f` letter, we postulate that it exists.
 
-Composition is noted `A + B`.
+Composition is noted `A + B`. It means the artifact A _and_ the artifact B, in juxtaposition, possibly overlapped.
 
 
 ## Independence

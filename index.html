@@ -242,8 +242,10 @@ pre
 */</style><title>this.self - A personal log</title></head><body><script src="highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <header><img id="logo" src="d-logo.svg"></img><div id="title-container"><div id="title">life-idioms
-<br><div id="sub-title">Where I try to organize ideas.</div></div></div></header><nav><div class="item-nav"><a href="#Brain-Tools&#x3A;-Diagonalization-and-Eigenvectors">Brain Tools&#x3A; Diagonalization and Eigenvectors
-</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Created Aug 22<span class="sub">th</span> 2022
+<br><div id="sub-title">Where I try to organize ideas.</div></div></div></header><nav><div class="item-nav"><a href="#ATM-Case-Study&#x3A;-Dependency-vs-Write-your-own">ATM Case Study&#x3A; Dependency vs Write-your-own
+</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Created Aug 29<span class="sub">th</span> 2022
+</span></div><div class="item-nav"><a href="#Brain-Tools&#x3A;-Diagonalization-and-Eigenvectors">Brain Tools&#x3A; Diagonalization and Eigenvectors
+</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Aug 23<span class="sub">th</span> 2022, created Aug 22<span class="sub">th</span> 2022
 </span></div><div class="item-nav"><a href="#DIY-Processing-Traumas">DIY Processing Traumas
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Created Jul 26<span class="sub">th</span> 2022
 </span></div><div class="item-nav"><a href="#On-being-a-former-sufferer-of-DPDR">On being a former sufferer of DPDR
@@ -270,7 +272,67 @@ pre
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 16<span class="sub">th</span> 2021, created Sep 23<span class="sub">th</span> 2021
 </span></div><div class="item-nav"><a href="#No-one-will-tell-you-this-business-advice">No one will tell you this business advice
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 16<span class="sub">th</span> 2021, created Sep 23<span class="sub">th</span> 2021
-</span></div></nav><div class="container"><a name="Brain-Tools&#x3A;-Diagonalization-and-Eigenvectors"></a><div class="idiom"><a class="permalink" href="#Brain-Tools&#x3A;-Diagonalization-and-Eigenvectors">Link
+</span></div></nav><div class="container"><a name="ATM-Case-Study&#x3A;-Dependency-vs-Write-your-own"></a><div class="idiom"><a class="permalink" href="#ATM-Case-Study&#x3A;-Dependency-vs-Write-your-own">Link
+</a><h1>ATM Case Studies #1: Dependency vs Write-your-own</h1>
+<p>That is a very typical situation!</p>
+<p>Entity <code>E</code> <em>owns</em> software artifact <code>A</code>. <code>E</code> wants a new feature which is in library <code>B</code>, completely developped by others. However, there is also the possibility to write its own feature instead of depending on <code>B</code>.</p>
+<h2>Translated in ATM terms</h2>
+<p>Let <code>A'</code> be the software artifact <code>A</code> after the change.</p>
+<p><code>E</code> wants to maximize its <a href="#Who-owns-software?">own ATM share</a> of <code>A'</code> (maximize: <code>ATM-E(A')</code>).</p>
+<p>Depending on the path followed, `A' could be equal to:</p>
+<ul>
+<li><code>A'</code> = <code>A</code> + <code>B</code> (dependency case)</li>
+<li><code>A'</code> = <code>A</code> + <code>C</code> (write-your-own case)</li>
+</ul>
+<p>Posed as an inequality, <code>E</code> should write its own if:</p>
+<pre><code>ATM-E(A + B) &lt; ATM-E(A + C)
+</code></pre>
+<p>We know that <code>A</code> and <code>B</code> are <a href="#Software-Artifacts-as-elementary-unit">independent</a>.</p>
+<pre><code>ATM-E(A) + ATM-E(B) &lt; ATM-E(A + C)
+</code></pre>
+<p>We know that <code>E</code> owns A and C completely. That gives <code>ATM-E(A) = ATM(A)</code> and <code>ATM-E(C) = ATM(C)</code>.</p>
+<pre><code>ATM(A) + ATM-E(B) &lt; ATM(A + C)
+</code></pre>
+<p>We know that <code>A</code> and <code>C</code> are not independent (it is expected that <code>C</code> will reuse parts of <code>A</code>), so we factor out their common part <code>D</code></p>
+<pre><code>A = D + (A without C)
+C = D + (C without A)
+</code></pre>
+<p>Replacing:</p>
+<pre><code>ATM(D) + ATM(A without C) + ATM-E(B) &lt; 2 x ATM(D) + ATM(A without C) + ATM(C without A)
+</code></pre>
+<p>Simplifying:</p>
+<pre><code>ATM-E(B) &lt; ATM(D) + ATM(C without A)
+</code></pre>
+<p>Simplifying again:</p>
+<pre><code>ATM-E(B) &lt; ATM(C)
+</code></pre>
+<p>So we've gone in a full circle tautology: <code>E</code> should write its own if the expected value of <code>C</code> over its lifetime exceeds the value of <code>B</code>, for <code>E</code>, over its lifetime.</p>
+<p><em>We haven't said anything there yet.</em></p>
+<h2>Attempt at decomposing costs</h2>
+<p>We postulate for this problem that ATM(x) will be split between:</p>
+<ul>
+<li>a creation cost <code>C(x)</code>, that also includes learnings and injuries, not just initial work</li>
+<li>increased sales because of the feature <code>P(x)</code></li>
+<li>a maintenance cost <code>M(x)</code></li>
+</ul>
+<p>Of those:</p>
+<ul>
+<li><code>P(x)</code> can only be &gt;= 0</li>
+<li><code>M(x)</code> can only be &lt;= 0</li>
+<li>in the case of infinitely long-lived software, <code>C(x)</code> is much smaller in magnitude than <code>M(x)</code> and <code>P(x)</code>.</li>
+</ul>
+<p>Our equation becomes:</p>
+<pre><code>C-E(B) + M-E(B) + P-E(B) &lt; C(C) + M(C) + P(C)
+</code></pre>
+<p>Because <code>B</code> is completely <em>owned</em> by others, C-E(B) is zero:</p>
+<pre><code>M-E(B) + P-E(B) &lt; C(C) + M(C) + P(C)
+</code></pre>
+<p>Now, we postulate that the feature leads to equal sales, whether it comes from artifact B or C. <strong>This is, of course, a huge postulate.</strong></p>
+<pre><code>P(C) = P-E(B)
+M-E(B) &lt; C(C) + M(C)
+</code></pre>
+<p>We stumble upon our second tautology: the cumulated maintenance ATM of C, plus its creation ATM, plus the learnings and injuries ATM, must be greater than the ATM cost of maintaining <code>B</code> (partially).</p>
+</div><a name="Brain-Tools&#x3A;-Diagonalization-and-Eigenvectors"></a><div class="idiom"><a class="permalink" href="#Brain-Tools&#x3A;-Diagonalization-and-Eigenvectors">Link
 </a><h1>Brain tools: Diagonalization and Eigenvectors</h1>
 <p><em>If you need to read only one article from this blog, read this one.</em></p>
 <p>I was mildly interested in singing, and tried to learn to sing all by myself.</p>
@@ -534,7 +596,7 @@ They have equal ATM.</p>
 <p>A software artifact is <strong>composed of</strong> other software artifacts, down to a unit level of minimum physical existence.
 For example, the for loop is made of the <code>for</code> keyword, itself composed of <code>f</code>, <code>o</code>, <code>r</code> characters.</p>
 <p>While it is difficult to think of an ATM just for a <code>f</code> letter, we postulate that it exists.</p>
-<p>Composition is noted <code>A + B</code>.</p>
+<p>Composition is noted <code>A + B</code>. It means the artifact A <em>and</em> the artifact B, in juxtaposition, possibly overlapped.</p>
 <h2>Independence</h2>
 <p>Two artifacts <code>A</code> and <code>B</code> are <strong>independent</strong> if for every artifact <code>a</code> that compose <code>A</code>, <code>a</code> cannot be found composing <code>B</code>.</p>
 <p>Example:</p>
