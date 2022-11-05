@@ -55,12 +55,12 @@ _We haven't said anything there yet._
 
 We postulate for this problem that ATM(x) will be split between:
   - a creation cost `C(x)`, that also includes learnings and injuries, not just initial work
-  - increased sales because of the feature `P(x)`
+  - increased business value because of the feature `P(x)`
   - a maintenance cost `M(x)`
 
 Of those:
-  - `P(x)` can only be >= 0
-  - `M(x)` can only be <= 0
+  - `P(x)` would be typically >= 0
+  - `M(x)` would be typically <= 0
   - in the case of infinitely long-lived software, `C(x)` is much smaller in magnitude than `M(x)` and `P(x)`.
 
 
@@ -72,7 +72,7 @@ Because `B` is completely _owned_ by others, C-E(B) is zero:
 
     M-E(B) + P-E(B) < C(C) + M(C) + P(C)
 
-Now, we postulate that the feature leads to equal sales, whether it comes from artifact B or C. **This is, of course, a huge postulate.**
+Now, we postulate that the feature leads to equal sales, whether it comes from artifact B or C. **This is, debatable postulate.**
 
     P(C) = P-E(B)
     M-E(B) < C(C) + M(C)
