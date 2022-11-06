@@ -1,4 +1,4 @@
-# ATM Case Studies #1: Conditional Task
+# ATM Case Studies #1: Should you fix this bug?
 
 _For that problem we will avoid all discussions of ownership, as they are often tautological._
 
@@ -64,8 +64,8 @@ Much like we assume stock price to vary in the future depending on yet unknown e
 
 We'll define **conditionals** with small letters.
 ```
-ATM(X | e) = ATM of artifact A, given than e will occur in the future.
-ATM(X | ~e) = ATM of artifact A, given than e will not occur in the future.
+ATM(X | e) = ATM of artifact X, given than e will occur in the future.
+ATM(X | ~e) = ATM of artifact X, given than e will not occur in the future.
 ```
 
 `ATM(X)` being a perfect, unknown price, it is equal to either exactly `ATM(X | e)` or exactly `ATM(X | ~e)`.
@@ -104,7 +104,22 @@ We can evaluate this to know approximately if this is worth it to attempt to wri
 
 
 
-## Should we fix the bug?
+## Should `E` fix the bug?
 
-This is equivalent, we should attempt to fix the bug if `ATM_approx(B)` is estimated to be > 0.
+This is equivalent, `E` should attempt to fix the bug if `ATM_approx(B)` is estimated to be > 0.
+
+
+Let `b` be the conditional "E manages to fix the bug".
+Let `G` be the ATM gain of "having the bug fixed".
+```
+ATM(B | b) = price of writing(B) + ( price-of-maintaining(B) + G) * prob(b)
+ATM(B | ~b) = price of failing to write(B)
+```
+
+The ATM of the fix is, in our analysis:
+```
+ATM(B) = price of failing to write(B) * (1 - prob(b)) + price of writing(B) + ( price-of-maintaining(B) + G)
+```
+
+This respect the tautological nature of our theory, since if the bug fixed can be found 100% of the time, then ATM(B) = ATM(B | b).
 

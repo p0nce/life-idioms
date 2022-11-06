@@ -242,8 +242,12 @@ pre
 */</style><title>this.self - A personal log</title></head><body><script src="highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <header><img id="logo" src="d-logo.svg"></img><div id="title-container"><div id="title">life-idioms
-<br><div id="sub-title">Where I try to organize ideas.</div></div></div></header><nav><div class="item-nav"><a href="#ATM-Case-Study&#x3A;-Dependency-vs-Write-your-own">ATM Case Study&#x3A; Dependency vs Write-your-own
-</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Created Aug 29<span class="sub">th</span> 2022
+<br><div id="sub-title">Where I try to organize ideas.</div></div></div></header><nav><div class="item-nav"><a href="#ATM-Case-Study&#x3A;-Conditional-Task">ATM Case Study&#x3A; Conditional Task
+</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Created Nov 6<span class="sub">th</span> 2022
+</span></div><div class="item-nav"><a href="#ATM-Case-Study&#x3A;-Dependency-vs-Write-your-own">ATM Case Study&#x3A; Dependency vs Write-your-own
+</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Nov 6<span class="sub">th</span> 2022, created Aug 29<span class="sub">th</span> 2022
+</span></div><div class="item-nav"><a href="#Software-Artifacts-as-elementary-unit">Software Artifacts as elementary unit
+</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Aug 29<span class="sub">th</span> 2022, created May 22<span class="sub">th</span> 2021
 </span></div><div class="item-nav"><a href="#Brain-Tools&#x3A;-Diagonalization-and-Eigenvectors">Brain Tools&#x3A; Diagonalization and Eigenvectors
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Aug 23<span class="sub">th</span> 2022, created Aug 22<span class="sub">th</span> 2022
 </span></div><div class="item-nav"><a href="#DIY-Processing-Traumas">DIY Processing Traumas
@@ -256,8 +260,6 @@ pre
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Created Jul 23<span class="sub">th</span> 2022
 </span></div><div class="item-nav"><a href="#Identify-body-chemicals">Identify body chemicals
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Created Jul 23<span class="sub">th</span> 2022
-</span></div><div class="item-nav"><a href="#Software-Artifacts-as-elementary-unit">Software Artifacts as elementary unit
-</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 20<span class="sub">th</span> 2021, created May 22<span class="sub">th</span> 2021
 </span></div><div class="item-nav"><a href="#Attention-Time-Money-(ATM)">Attention Time Money (ATM)
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 20<span class="sub">th</span> 2021, created Mar 6<span class="sub">th</span> 2021
 </span></div><div class="item-nav"><a href="#Thoughts-should-pay-for-themselves">Thoughts should pay for themselves
@@ -272,7 +274,79 @@ pre
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 16<span class="sub">th</span> 2021, created Sep 23<span class="sub">th</span> 2021
 </span></div><div class="item-nav"><a href="#No-one-will-tell-you-this-business-advice">No one will tell you this business advice
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 16<span class="sub">th</span> 2021, created Sep 23<span class="sub">th</span> 2021
-</span></div></nav><div class="container"><a name="ATM-Case-Study&#x3A;-Dependency-vs-Write-your-own"></a><div class="idiom"><a class="permalink" href="#ATM-Case-Study&#x3A;-Dependency-vs-Write-your-own">Link
+</span></div></nav><div class="container"><a name="ATM-Case-Study&#x3A;-Conditional-Task"></a><div class="idiom"><a class="permalink" href="#ATM-Case-Study&#x3A;-Conditional-Task">Link
+</a><h1>ATM Case Studies #1: Should you fix this bug?</h1>
+<p><em>For that problem we will avoid all discussions of ownership, as they are often tautological.</em></p>
+<p>Some things you can't know before building them, for example the outcome of an algorithm, or the cost of a bug fix.</p>
+<h2>The problem to illustrate this</h2>
+<p>Edouard resize images with lanczos3. He's trying the magic kernel, but the result has a new bug. What to do? Persevere or abandon the effort?</p>
+<h2>Translated in ATM terms</h2>
+<p>In entity <code>E</code> codebase, there is an image resizer <code>R</code>.</p>
+<p><code>E</code> wants to try another image resizing algorithm <code>A</code>, and take the best one. <code>R' = R + A</code> is created.
+Unfortunately, to use the new algorithm there is a bug fix <code>B</code> to be found first, a memory corruption.</p>
+<p>The new algorithm suitability (<code>R'</code> better than <code>R</code>) can only be assessed once <code>R'</code> has been built.
+The new algorithm can only be used once <code>R''</code> has been built.</p>
+<p>We suppose independent decomposition of R' into R and A, and of R'' into R' and B.</p>
+<p>**What should do E:</p>
+<ol>
+<li>keep <code>R</code></li>
+<li>develop <code>R' = R + A</code>?</li>
+<li>develop <code>R'' = R + A + B</code>?</li>
+</ol>
+<ul>
+<li>Intuitively, it's not worth building <code>R'</code> is the new algorithm can't be better.</li>
+<li>Intuitively, it's not fixing it, if the new algorithm doesn't prove better in tests.</li>
+</ul>
+<p>Obviously the ATM outcome of doing nothing is the &quot;BATNA&quot; choice, <code>ATM(R)</code>.</p>
+<p><strong>For the R vs R' decision</strong></p>
+<p>The algorithm should be built if:</p>
+<pre><code>ATM(R') - ATM(R) &gt; 0
+</code></pre>
+<p>Under our postulate of independence this is equivalent to:</p>
+<pre><code>ATM(A) &gt; 0
+</code></pre>
+<p>A being the specific modification of R that implements the new algorithm.</p>
+<p><strong>For the R' vs R'' decision</strong></p>
+<p>The algorithm should be debugged if the fix is a positive ATM artifact:</p>
+<pre><code>ATM(B) &gt; 0
+</code></pre>
+<h2>So we are stuck there</h2>
+<p>We need a way to decomposate ATM alongside conditionals.
+Much like we assume stock price to vary in the future depending on yet unknown events, such as the earth exploding.</p>
+<p>We'll define <strong>conditionals</strong> with small letters.</p>
+<pre><code>ATM(X | e) = ATM of artifact X, given than e will occur in the future.
+ATM(X | ~e) = ATM of artifact X, given than e will not occur in the future.
+</code></pre>
+<p><code>ATM(X)</code> being a perfect, unknown price, it is equal to either exactly <code>ATM(X | e)</code> or exactly <code>ATM(X | ~e)</code>.</p>
+<h2>Let's get back to our problem</h2>
+<p>Let <code>c</code> be the conditional &quot;new algorithm better than older&quot;.
+Let <code>D</code> be the ATM gain of &quot;having a better algorithm&quot;.</p>
+<p>We estimate:</p>
+<pre><code>ATM_approx(A | c) = price of writing(A) + price-of-maintaining(A) + D
+</code></pre>
+<p>and</p>
+<pre><code>ATM_approx(A | ~c) = price of writing(A)
+</code></pre>
+<p>Thus we can estimate <code>ATM(A)</code>:</p>
+<pre><code>ATM_approx(A) = ATM_approx(A | c) * prob(c) + ATM_approx(A | ~c) * (1 - prob(c))
+</code></pre>
+<p>So this is exactly a <strong>Bayesian</strong> rule.</p>
+<p>Our solution is now:</p>
+<pre><code>ATM_approx(A) = price of writing(A) + ( price-of-maintaining(A) + D) * prob(c)
+</code></pre>
+<p>We can evaluate this to know approximately if this is worth it to attempt to write <code>A</code>.</p>
+<h2>Should <code>E</code> fix the bug?</h2>
+<p>This is equivalent, <code>E</code> should attempt to fix the bug if <code>ATM_approx(B)</code> is estimated to be &gt; 0.</p>
+<p>Let <code>b</code> be the conditional &quot;E manages to fix the bug&quot;.
+Let <code>G</code> be the ATM gain of &quot;having the bug fixed&quot;.</p>
+<pre><code>ATM(B | b) = price of writing(B) + ( price-of-maintaining(B) + G) * prob(b)
+ATM(B | ~b) = price of failing to write(B)
+</code></pre>
+<p>The ATM of the fix is, in our analysis:</p>
+<pre><code>ATM(B) = price of failing to write(B) * (1 - prob(b)) + price of writing(B) + ( price-of-maintaining(B) + G)
+</code></pre>
+<p>This respect the tautological nature of our theory, since if the bug fixed can be found 100% of the time, then ATM(B) = ATM(B | b).</p>
+</div><a name="ATM-Case-Study&#x3A;-Dependency-vs-Write-your-own"></a><div class="idiom"><a class="permalink" href="#ATM-Case-Study&#x3A;-Dependency-vs-Write-your-own">Link
 </a><h1>ATM Case Studies #1: Dependency vs Write-your-own</h1>
 <p>That is a very typical situation!</p>
 <p>Entity <code>E</code> <em>owns</em> software artifact <code>A</code>. <code>E</code> wants a new feature which is in library <code>B</code>, completely developped by others. However, there is also the possibility to write its own feature instead of depending on <code>B</code>.</p>
@@ -312,13 +386,13 @@ C = D + (C without A)
 <p>We postulate for this problem that ATM(x) will be split between:</p>
 <ul>
 <li>a creation cost <code>C(x)</code>, that also includes learnings and injuries, not just initial work</li>
-<li>increased sales because of the feature <code>P(x)</code></li>
+<li>increased business value because of the feature <code>P(x)</code></li>
 <li>a maintenance cost <code>M(x)</code></li>
 </ul>
 <p>Of those:</p>
 <ul>
-<li><code>P(x)</code> can only be &gt;= 0</li>
-<li><code>M(x)</code> can only be &lt;= 0</li>
+<li><code>P(x)</code> would be typically &gt;= 0</li>
+<li><code>M(x)</code> would be typically &lt;= 0</li>
 <li>in the case of infinitely long-lived software, <code>C(x)</code> is much smaller in magnitude than <code>M(x)</code> and <code>P(x)</code>.</li>
 </ul>
 <p>Our equation becomes:</p>
@@ -327,11 +401,82 @@ C = D + (C without A)
 <p>Because <code>B</code> is completely <em>owned</em> by others, C-E(B) is zero:</p>
 <pre><code>M-E(B) + P-E(B) &lt; C(C) + M(C) + P(C)
 </code></pre>
-<p>Now, we postulate that the feature leads to equal sales, whether it comes from artifact B or C. <strong>This is, of course, a huge postulate.</strong></p>
+<p>Now, we postulate that the feature leads to equal sales, whether it comes from artifact B or C. <strong>This is, debatable postulate.</strong></p>
 <pre><code>P(C) = P-E(B)
 M-E(B) &lt; C(C) + M(C)
 </code></pre>
 <p>We stumble upon our second tautology: the cumulated maintenance ATM of C, plus its creation ATM, plus the learnings and injuries ATM, must be greater than the ATM cost of maintaining <code>B</code> (partially).</p>
+</div><a name="Software-Artifacts-as-elementary-unit"></a><div class="idiom"><a class="permalink" href="#Software-Artifacts-as-elementary-unit">Link
+</a><h1>Software Artifacts as elementary unit</h1>
+<p>I'd like to reason upon any kind of software artifacts:</p>
+<ul>
+<li>an octet</li>
+<li>a for loop</li>
+<li>a function</li>
+<li>a class object</li>
+<li>a whole product</li>
+<li>a product portfolio</li>
+</ul>
+<p>In this blog these will be called &quot;software artifacts&quot;.</p>
+<p>A <em>Software Artifact</em> has:</p>
+<ul>
+<li><p><strong>Existence.</strong> Has a physical extent in lines of codes, documentation, or data presence <code>Extent(x)</code>.
+Arguably if it isn't there, then it doesn't exist.</p>
+</li>
+<li><p><strong>Price.</strong> For each artifact <code>x</code>, we note <code>ATM(x)</code> the amount of Attention/Time/Money gained by <code>x</code> existing.
+This is the cost to write the artifact, the cost to maintain it, selling it, etc. aggregated over its total lifetime (like <em>stocks</em>).</p>
+<p>More often than not, this ATM isn't known.</p>
+</li>
+</ul>
+<h2>Equality</h2>
+<p>Two software artifacts <code>A</code> and <code>B</code> are <strong>equal</strong> iff <code>Extent(A) == Extent(B)</code>.
+They have equal ATM.</p>
+<h2>Composition</h2>
+<p>A software artifact is <strong>composed of</strong> other software artifacts, down to a unit level of minimum physical existence.
+For example, the for loop is made of the <code>for</code> keyword, itself composed of <code>f</code>, <code>o</code>, <code>r</code> characters.</p>
+<p>While it is difficult to think of an ATM just for a <code>f</code> letter, we postulate that it exists.</p>
+<p>Composition is noted <code>A + B</code>. It means the artifact A <em>and</em> the artifact B, in juxtaposition, possibly overlapped.</p>
+<h2>Independence</h2>
+<p>Two artifacts <code>A</code> and <code>B</code> are <strong>independent</strong> if for every artifact <code>a</code> that compose <code>A</code>, <code>a</code> cannot be found composing <code>B</code>.</p>
+<p>Example:</p>
+<pre><code>Company Comcom has two completely independent software products Toto and Titi,
+that don't share a single file.
+</code></pre>
+<p>Postulate: if <code>A</code> and <code>B</code> are independent, then <code>ATM(A + B) = ATM(A) + ATM(B)</code>.</p>
+<p>Example:</p>
+<pre><code>The Toto product earns $1000 a month and the Titi product $2000 a month, 
+without any attention or time commitment, without sharing a single file.
+Since they are independent, ATM(Titi + Toto) = ATM(Titi) + ATM(Toto). 
+Their earnings add up independently.
+Note that we still don't know the actual value of ATM(Titi) or ATM(Toto).
+</code></pre>
+<h2>Decomposition rule</h2>
+<p>If software artifacts <code>A</code> and <code>B</code> are not independent, there exist 3 independent artifacts <code>a</code>, <code>b</code>, <code>C</code> such that:</p>
+<ul>
+<li><code>A == C + a</code></li>
+<li><code>B == C + b</code></li>
+</ul>
+<p>In this case: <code>ATM(A + B) = 2.ATM(C) + ATM(a) + ATM(b)</code></p>
+<p>Example:</p>
+<pre><code>The Toto and Titi products now share some library code Baba.
+Toto earns $10000 a month and the Titi product only $100 a month, 
+without any attention or time commitment.
+ATM(Titi + Toto) = 2.ATM(Baba) + ATM(Toto-specific code) + ATM(Titi-specific code)
+</code></pre>
+<p>Intuitively, we find that the most reused software artifacts have the most impact in the earnings of Comcom the company.
+In this case, <code>ATM(Toto-specific-code)</code> is probably large, but we don't know it's exact value.
+We <em>also</em> don't know the split between <code>Baba</code> and <code>Toto-specific code</code>.</p>
+<h2>We still don't know the ATM value</h2>
+<p>In typical practice, a proxy for knowing <code>ATM(x)</code> is the very measurable <em>immediate sales generated by x</em>.</p>
+<p><strong>This is wrong.</strong></p>
+<p>Because this is only an approximation:</p>
+<ul>
+<li>the full cost is the integral over time of Attention, Time and Money. Not the immediate Money generation.
+ATM is to software, what stocks are to companies.</li>
+<li>Sales do not tell the story of Time and Attention consumed by <code>x</code>. A fact often lamented in &quot;technical debt&quot; rants.</li>
+<li>ATM is value for the world in general. Every actor actually gets <a href="#Who-owns-software?">a different share of that number</a>, possibly negative.</li>
+</ul>
+<p><strong>While ATM is the primary measure of success in an artifact, we have only a passing understanding of its real value. Instead what is used is often a short-term, partial, proxy measurement for ATM: sales for the shareholder.</strong></p>
 </div><a name="Brain-Tools&#x3A;-Diagonalization-and-Eigenvectors"></a><div class="idiom"><a class="permalink" href="#Brain-Tools&#x3A;-Diagonalization-and-Eigenvectors">Link
 </a><h1>Brain tools: Diagonalization and Eigenvectors</h1>
 <p><em>If you need to read only one article from this blog, read this one.</em></p>
@@ -567,77 +712,6 @@ Beware: this is more anxiety-inducing than just THC.</p>
 <h2>Do you know any others?</h2>
 <p>I'd like to hear ways to distinguish norepinefrine, GABA, glutamate, acetylcholine...
 It is also possible I'm mistaking one chemicals for another.</p>
-</div><a name="Software-Artifacts-as-elementary-unit"></a><div class="idiom"><a class="permalink" href="#Software-Artifacts-as-elementary-unit">Link
-</a><h1>Software Artifacts as elementary unit</h1>
-<p>I'd like to reason upon any kind of software artifacts:</p>
-<ul>
-<li>an octet</li>
-<li>a for loop</li>
-<li>a function</li>
-<li>a class object</li>
-<li>a whole product</li>
-<li>a product portfolio</li>
-</ul>
-<p>In this blog these will be called &quot;software artifacts&quot;.</p>
-<p>A <em>Software Artifact</em> has:</p>
-<ul>
-<li><p><strong>Existence.</strong> Has a physical extent in lines of codes, documentation, or data presence <code>Extent(x)</code>.
-Arguably if it isn't there, then it doesn't exist.</p>
-</li>
-<li><p><strong>Price.</strong> For each artifact <code>x</code>, we note <code>ATM(x)</code> the amount of Attention/Time/Money gained by <code>x</code> existing.
-This is the cost to write the artifact, the cost to maintain it, selling it, etc. aggregated over its total lifetime (like <em>stocks</em>).</p>
-<p>More often than not, this ATM isn't known.</p>
-</li>
-</ul>
-<h2>Equality</h2>
-<p>Two software artifacts <code>A</code> and <code>B</code> are <strong>equal</strong> iff <code>Extent(A) == Extent(B)</code>.
-They have equal ATM.</p>
-<h2>Composition</h2>
-<p>A software artifact is <strong>composed of</strong> other software artifacts, down to a unit level of minimum physical existence.
-For example, the for loop is made of the <code>for</code> keyword, itself composed of <code>f</code>, <code>o</code>, <code>r</code> characters.</p>
-<p>While it is difficult to think of an ATM just for a <code>f</code> letter, we postulate that it exists.</p>
-<p>Composition is noted <code>A + B</code>. It means the artifact A <em>and</em> the artifact B, in juxtaposition, possibly overlapped.</p>
-<h2>Independence</h2>
-<p>Two artifacts <code>A</code> and <code>B</code> are <strong>independent</strong> if for every artifact <code>a</code> that compose <code>A</code>, <code>a</code> cannot be found composing <code>B</code>.</p>
-<p>Example:</p>
-<pre><code>Company Comcom has two completely independent software products Toto and Titi,
-that don't share a single file.
-</code></pre>
-<p>Postulate: if <code>A</code> and <code>B</code> are independent, then <code>ATM(A + B) = ATM(A) + ATM(B)</code>.</p>
-<p>Example:</p>
-<pre><code>The Toto product earns $1000 a month and the Titi product $2000 a month, 
-without any attention or time commitment, without sharing a single file.
-Since they are independent, ATM(Titi + Toto) = ATM(Titi) + ATM(Toto). 
-Their earnings add up independently.
-Note that we still don't know the actual value of ATM(Titi) or ATM(Toto).
-</code></pre>
-<h2>Decomposition rule</h2>
-<p>If software artifacts <code>A</code> and <code>B</code> are not independent, there exist 3 independent artifacts <code>a</code>, <code>b</code>, <code>C</code> such that:</p>
-<ul>
-<li><code>A == C + a</code></li>
-<li><code>B == C + b</code></li>
-</ul>
-<p>In this case: <code>ATM(A + B) = 2.ATM(C) + ATM(a) + ATM(b)</code></p>
-<p>Example:</p>
-<pre><code>The Toto and Titi products now share some library code Baba.
-Toto earns $10000 a month and the Titi product only $100 a month, 
-without any attention or time commitment.
-ATM(Titi + Toto) = 2.ATM(Baba) + ATM(Toto-specific code) + ATM(Titi-specific code)
-</code></pre>
-<p>Intuitively, we find that the most reused software artifacts have the most impact in the earnings of Comcom the company.
-In this case, <code>ATM(Toto-specific-code)</code> is probably large, but we don't know it's exact value.
-We <em>also</em> don't know the split between <code>Baba</code> and <code>Toto-specific code</code>.</p>
-<h2>We still don't know the ATM value</h2>
-<p>In typical practice, a proxy for knowing <code>ATM(x)</code> is the very measurable <em>immediate sales generated by x</em>.</p>
-<p><strong>This is wrong.</strong></p>
-<p>Because this is only an approximation:</p>
-<ul>
-<li>the full cost is the integral over time of Attention, Time and Money. Not the immediate Money generation.
-ATM is to software, what stocks are to companies.</li>
-<li>Sales do not tell the story of Time and Attention consumed by <code>x</code>. A fact often lamented in &quot;technical debt&quot; rants.</li>
-<li>ATM is value for the world in general. Every actor actually gets <a href="#Who-owns-software?">a different share of that number</a>, possibly negative.</li>
-</ul>
-<p><strong>While ATM is the primary measure of success in an artifact, we have only a passing understanding of its real value. Instead what is used is often a short-term, partial, proxy measurement for ATM: sales for the shareholder.</strong></p>
 </div><a name="Attention-Time-Money-(ATM)"></a><div class="idiom"><a class="permalink" href="#Attention-Time-Money-(ATM)">Link
 </a><h1>Attention, Time, Money</h1>
 <p>I'd like to introduce the unfortunate acronym <strong>ATM</strong> (Attention-Time-Money) as an aggregate measure of economical value of software. For simplicity, these resources can be considered the same quantity and convertible.</p>
