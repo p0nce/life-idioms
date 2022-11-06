@@ -1,4 +1,4 @@
-# ATM Case Studies #1: Should you fix this bug?
+# ATM Case Studies #2: Should you fix this bug?
 
 _For that problem we will avoid all discussions of ownership, as they are often tautological._
 
