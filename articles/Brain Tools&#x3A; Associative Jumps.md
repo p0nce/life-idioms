@@ -24,7 +24,7 @@ _Heavily intoxicated, Albert founds out that hearing pitched noise create a heav
 
 _Question: What could be a rational explanation for this?_
 
-**Actually** this can be explained partly by placebo, but also by an increase in the associative engine in the brain due to intoxication.
+**Actually** this can be explained partly by placebo, but also by an increase in the associative engine in the brain due to the intoxication.
 
 1. "I'm hearing this frequency."
 2. **JUMP** "This organ should be vibrating, if there is such a frequency to be heard".

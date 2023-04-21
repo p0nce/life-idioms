@@ -21,8 +21,8 @@ Fasting also increase serotonine.
 
 ## Dopamine
 
-Using THC 1 hour after eating _red beans_ will produce a high that has a serotonin color. 
-Beware: this is more anxiety-inducing than just THC.
+Using THC 1 hour after eating _red beans_ will produce a high that has a dopaminergic color. 
+Beware: this is more anxiety-inducing than just THC. Panic attacks are to be expected.
 
 This seems to increase placebo effects, or to be the root cause of it.
 
@@ -31,7 +31,7 @@ This seems to increase placebo effects, or to be the root cause of it.
 
 The so-called runner's high is partly anandamide.
 
-2 hours before running, drink a combination of: paracetamol, powder chocolate and grapeseed oil. It has an awful taste.
+2 hours before running, drink a combination of: paracetamol, powder chocolate and grapeseed oil. It has an awful taste. The effect is an increase in "runner's high".
 
 
 ## BNDF

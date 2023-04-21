@@ -17,18 +17,18 @@ In entity `E` codebase, there is an image resizer `R`.
 `E` wants to try another image resizing algorithm `A`, and take the best one. `R' = R + A` is created.
 Unfortunately, to use the new algorithm there is a bug fix `B` to be found first, a memory corruption.
 
-The new algorithm suitability (`R'` better than `R`) can only be assessed once `R'` has been built.
-The new algorithm can only be used once `R''` has been built.
+- The new algorithm suitability (`R'` better than `R`) can only be _assessed_ once `R'` has been built.
+- The new algorithm can only be _used_ once `R''` with `R'' = R' + B` has been built.
 
 We suppose independent decomposition of R' into R and A, and of R'' into R' and B.
 
 **What should do E:
   1. keep `R`
-  2. develop `R' = R + A`?
-  3. develop `R'' = R + A + B`?
+  2. develop `R' = R + A`? (the new resizer)
+  3. develop `R'' = R + A + B`? (the new resizer, fixed)
 
-- Intuitively, it's not worth building `R'` is the new algorithm can't be better.
-- Intuitively, it's not fixing it, if the new algorithm doesn't prove better in tests.
+- Intuitively, it's not worth building `R'` if we know the new algorithm can't be better.
+- Intuitively, it's not worth fixing it, if the new algorithm doesn't prove better in tests.
 
 
 Obviously the ATM outcome of doing nothing is the "BATNA" choice, `ATM(R)`.
@@ -46,12 +46,12 @@ Under our postulate of independence this is equivalent to:
 ATM(A) > 0
 ```
 
-A being the specific modification of R that implements the new algorithm.
+`A` being the specific modification of R that implements the new algorithm.
 
 
 **For the R' vs R'' decision**
 
-The algorithm should be debugged if the fix is a positive ATM artifact:
+Likewise, the algorithm should be debugged if the fix is a positive ATM artifact:
 ```
 ATM(B) > 0
 ```
@@ -60,7 +60,7 @@ ATM(B) > 0
 ## So we are stuck there
 
 We need a way to decomposate ATM alongside conditionals.
-Much like we assume stock price to vary in the future depending on yet unknown events, such as the earth exploding.
+Much like we assume stock price to vary in the future depending on yet unknown events (such as the earth exploding).
 
 We'll define **conditionals** with small letters.
 ```
@@ -100,7 +100,7 @@ Our solution is now:
 ATM_approx(A) = price of writing(A) + ( price-of-maintaining(A) + D) * prob(c)
 ```
 
-We can evaluate this to know approximately if this is worth it to attempt to write `A`.
+**We can evaluate this to know approximately if this is worth it to attempt to write `A`.**
 
 
 
@@ -121,5 +121,5 @@ The ATM of the fix is, in our analysis:
 ATM(B) = price of failing to write(B) * (1 - prob(b)) + price of writing(B) + ( price-of-maintaining(B) + G)
 ```
 
-This respect the tautological nature of our theory, since if the bug fixed can be found 100% of the time, then ATM(B) = ATM(B | b).
+This respects the **tautological nature of our ATM theory**, since if the bug fix can be found 100% of the time, then ATM(B) = ATM(B | b).
 
