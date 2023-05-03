@@ -1,5 +1,7 @@
 # Futuristic ideas not being pursued
 
+**DICLAIMER: I realize I'm sounding like a mad man. This post is not for well flushed out ideas, rather things that I feel should happen eventually. Please bear with me.**
+
 These days it's all about AI, and Web3, and crypto, and other things I can only classify as distractions. This is the neverending noise of our times.
 
 I'm afraid that **real progress may not look anything like that.** It may well hide in the little things. Actually my belief is that we could live in a futuristic world if only we paid attention.
@@ -63,4 +65,15 @@ If people are teaching "Body Reprogramming" for fibromyalgia, maybe we could mak
 
 If one could synthesize "status", there would be less of need to spend its life pursuing status at the expense of others.
 
-Through virtual reality, people could experience low or high status at will, leading to "status awareness".
+Through virtual reality, people could experience low or high status at will, leading to "status awareness". This is a very dangerous idea, since the idea of going upper class is structuring the whole society.
+
+But this will be helpful to...
+
+
+## Further the rebuilding of the organization
+
+Today organizations rely on status, ostracism, and material advantages to function. Power is concentrated to hide information and appeal to our gregarious minds. Their primary mechanism is obedience.
+
+There are lots of attempt to improve the organization, from sociocracy to holacracy. The new ways tend to conceal the inherent conflicts instead of giving them a corpse, and also increase engagement. Their primary mechanisme is status.
+
+We need to find fair structures that can work with low-engagement AND fluid power AND unbalanced access to the power of speech. What will keep people motivated?
