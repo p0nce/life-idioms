@@ -54,13 +54,13 @@ We may research more the small-time [Volitional personnality changes](https://ww
 
 ## Allergies, sleep apnea, and autoimmune disease with CBT-like methods
 
-We need to investigate the link between brain and immune system. [CBT](https://en.wikipedia.org/wiki/CBT)-like methods can probably help. When it doesn't help, it seems to at least the problem gets less noticeable.
+We need to investigate the link between brain and immune system. [CBT](https://en.wikipedia.org/wiki/CBT)-like methods can probably help with a wide variety of troubles that were thought out of scope. When it doesn't help, it seems that at least the problem gets less noticeable.
 
-If people are teaching "Body Reprogramming" for fibromyalgia, maybe we could make people move their teeth for sleep apnea too.
+If people are teaching "Body Reprogramming" for fibromyalgia, maybe we could make people move their teeth for sleep apnea instead of waking up.
 
 
 ## Deconstructing status
 
-If one could synthesize "status", there would be less of need to spend its life pursuing it at the expense of others.
+If one could synthesize "status", there would be less of need to spend its life pursuing status at the expense of others.
 
 Through virtual reality, people could experience low or high status at will, leading to "status awareness".
