@@ -1,0 +1,9 @@
+{
+	"name": "software-traits",
+	"dependencies":
+	{
+		"gamut": "~>2.0"
+	},
+	"sourceFiles": ["main.d"],
+	"targetType": "executable"
+}
