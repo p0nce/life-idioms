@@ -242,8 +242,8 @@ pre
 */</style><title>this.self - A personal log</title></head><body><script src="highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <header><img id="logo" src="d-logo.svg"></img><div id="title-container"><div id="title">life-idioms
-<br><div id="sub-title">Where I try to organize ideas.</div></div></div></header><nav><div class="item-nav"><a href="#Software-traits">Software traits
-</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Created Jun 28<span class="sub">th</span> 2023
+<br><div id="sub-title">Where I try to organize ideas.</div></div></div></header><nav><div class="item-nav"><a href="#Software-personality-traits">Software personality traits
+</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Created Jul 28<span class="sub">th</span> 2023
 </span></div><div class="item-nav"><a href="#Futuristic-ideas-not-being-pursued">Futuristic ideas not being pursued
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Created May 3<span class="sub">rd</span> 2023
 </span></div><div class="item-nav"><a href="#ATM-Case-Study&#x3A;-Should-you-fix-this-bug&#x3F;">ATM Case Study&#x3A; Should you fix this bug&#x3F;
@@ -278,12 +278,12 @@ pre
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 16<span class="sub">th</span> 2021, created Sep 23<span class="sub">th</span> 2021
 </span></div><div class="item-nav"><a href="#No-one-will-tell-you-this-business-advice">No one will tell you this business advice
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 16<span class="sub">th</span> 2021, created Sep 23<span class="sub">th</span> 2021
-</span></div></nav><div class="container"><a name="Software-traits"></a><div class="idiom"><a class="permalink" href="#Software-traits">Link
-</a><h1>Software traits</h1>
-<p>I want to reason on qualitative &quot;traits&quot; that software artifacts may have. Like personnality studies, if we can enumerate those possible traits and find the correlation, we will maybe stumble upon a &quot;Big Five&quot; of software.</p>
+</span></div></nav><div class="container"><a name="Software-personality-traits"></a><div class="idiom"><a class="permalink" href="#Software-personality-traits">Link
+</a><h1>Software personality traits</h1>
+<p>I want to reason on qualitative &quot;traits&quot; that software artifacts may have. Like personality studies, if we can enumerate those possible traits and find the correlation, we will maybe stumble upon a &quot;Big Five&quot; of software.</p>
 <p>Here is the method:</p>
 <ul>
-<li>First, find any pair of opposite traits that software artifacts may have.</li>
+<li>First, find any pair of opposite traits that software artifacts may have, even if their definition is rather blurry.</li>
 <li>Second: rate imaginary software artifacts alongside those different axis.</li>
 </ul>
 <h2>The before rating</h2>
@@ -307,7 +307,7 @@ pre
 </li>
 <li><p>T. <strong>Top-down</strong> (T+) vs <strong>Bottom-up</strong> (T-) <em>Was the software made rather with topdown design, or with bottom-up design?</em></p>
 </li>
-<li><p>R. <strong>Reused</strong> (R+) vs <strong>Throwable</strong> (R-) <em>Could anyone reuse the code?</em></p>
+<li><p>R. <strong>Reused</strong> (R+) vs <strong>Throwable</strong> (R-) <em>Does the artifact NEED to be reusable to justify existence?</em></p>
 </li>
 <li><p>C. <strong>Creative</strong> (C+) vs <strong>Conventional</strong> (C-) <em>Do you know what the result will be like at creation?</em></p>
 </li>
@@ -322,15 +322,17 @@ pre
 <li><p>E. <strong>Errors matter</strong> (E+) vs <strong>Errors can be ignored</strong> (E-) <em>Does the artefact NEED to manage errors in a meaningful way?</em></p>
 </li>
 </ul>
+<p><em>Obviously this choosen set isn't perfect at all.</em></p>
 <h2>The artifacts</h2>
+<p>Let's rate all of the artifacts alongside those axis, and see what happens.</p>
 <h3>1. An informal Excel ERP made by a small business owner</h3>
 <pre><code>H- D+ U+ Q- S- B+ F- T- R- C+ U- P+ M= N+ E-
 </code></pre>
 <h3>2. A web browser made in C++, started after year 2000</h3>
-<pre><code>H+ D= U= Q+ S+ B+ F+ T+ R+ C- U+ P- M+ N- E+
+<pre><code>H+ D= U= Q+ S+ B+ F+ T+ R- C- U+ P- M+ N- E+
 </code></pre>
 <h3>3. A synthesizer plugin made in C++ and JUCE</h3>
-<pre><code>H- D= U- Q+ S+ B- F+ T= R= C+ U+ P- M= N+ E-
+<pre><code>H- D= U- Q+ S+ B- F+ T= R- C+ U+ P- M= N+ E-
 </code></pre>
 <h3>4. The backend of a bank in COBOL</h3>
 <pre><code>H+ D= U= Q= S+ B- F+ T= R- C+ U- P+ M+ N= E+
@@ -351,7 +353,7 @@ pre
 <pre><code>H- D+ U+ Q- S+ B+ F- T+ R- C+ U+ P- M= N+ E-
 </code></pre>
 <h3>10. A Mobile video game made in Unity and C#</h3>
-<pre><code>H- D= U- Q+ S+ B- F+ T- R= C+ U+ P- M= N+ E-
+<pre><code>H- D= U- Q+ S+ B- F+ T- R- C+ U+ P- M= N+ E-
 </code></pre>
 <h3>11. A short R script to compute one curve fitting for a paper</h3>
 <pre><code>H- D- U+ Q- S- B+ F- T- R- C+ U- P+ M- N= E-
@@ -360,11 +362,30 @@ pre
 <pre><code>H- D- U- Q- S+ B+ F- T+ R= C- U+ P+ M- N- E-
 </code></pre>
 <h3>13. The interface of an Unicode Java library</h3>
-<pre><code>H+ D- U+ Q+ S- B- F- T+ R- C+ U- P+ M- N- E+
+<pre><code>H+ D- U+ Q+ S- B- F- T+ R+ C+ U- P+ M- N- E+
 </code></pre>
 <h3>14. The implementation of an Unicode Java library</h3>
-<pre><code>H- D= U- Q= S+ B- F- T- R+ C+ U- P+ M+ N- E+
+<pre><code>H- D= U- Q= S+ B- F- T- R- C+ U- P+ M+ N- E+
 </code></pre>
+<h2>Image of the dataset</h2>
+<img style="image-rendering: pixelated; width:50%" src="software-traits/dataset.png" />
+<h2>Image of the cross-correlations</h2>
+<img style="image-rendering: pixelated; width:50%" src="software-traits/correlations.png" />
+<h2>Conclusions</h2>
+<p>Here are the strongest autocorrelations analysis in our small dataset:</p>
+<ul>
+<li><p>&quot;Consumer&quot; software is associated with &quot;User-rich&quot;. Which could also means non-consumer software can be poor in this regards and have less modalities.</p>
+</li>
+<li><p>Software where error reporting matters also are software where information-hiding matter. Perhaps an explicitely &quot;throwable&quot; traits would highlight this lack of correctness, and under what conditions.</p>
+</li>
+<li><p>Software comprised of &quot;declarative&quot; style is also often software with a bigger runtime.</p>
+</li>
+<li><p>Declarative code is less meant to be reused. Which makes sense if we think of HTML, CSS, etc.</p>
+</li>
+<li><p>Software that needs to be fast often also needs to be of a high-quality, or vice-versa. Perhaps introducing a factor of &quot;resource-contraints&quot; would clarify what high-quality means.</p>
+</li>
+</ul>
+<p>Well, that's not bad for an informal made-up dataset. If done with more rigor, one should perhaps discover useful phenomenon and even reduce to core dimensional traits of software artifacts.</p>
 </div><a name="Futuristic-ideas-not-being-pursued"></a><div class="idiom"><a class="permalink" href="#Futuristic-ideas-not-being-pursued">Link
 </a><h1>Futuristic ideas not being pursued</h1>
 <p><strong>DICLAIMER: I realize I'm sounding like a mad man. This post is not for well flushed out ideas, rather things that I feel should happen eventually. Please bear with me.</strong></p>
