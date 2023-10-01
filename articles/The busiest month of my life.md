@@ -2,7 +2,7 @@
 
 In a surprising sequence of events, the month of mid-July to mid-August 2019 was **a lot** more eventful than usual.
 
-- I moved and then was suspected in the murder of my former landlord, who was strangulated (I'll write about it later).
+- I moved and then was suspected in the murder of my former landlord, who was strangulated (I'll write about it later, hint: I wasn't the murderer).
 - Had an brief affair with someone I later fell in love with.
 - Had a scary one-hour relapse in [DPDR](#What-DPDR-feels-like) because of a book.
 - Moved flat.
