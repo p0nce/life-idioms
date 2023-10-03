@@ -242,7 +242,11 @@ pre
 */</style><title>this.self - A personal log</title></head><body><script src="highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <header><img id="logo" src="d-logo.svg"></img><div id="title-container"><div id="title">life-idioms
-<br><div id="sub-title">Where I try to organize ideas.</div></div></div></header><nav><div class="item-nav"><a href="#Software-personality-traits">Software personality traits
+<br><div id="sub-title">Where I try to organize ideas.</div></div></div></header><nav><div class="item-nav"><a href="#Link-between-ATM-theory-and-programming-language">Link between ATM theory and programming language
+</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Created Oct 1<span class="sub">st</span> 2023
+</span></div><div class="item-nav"><a href="#The-busiest-month-of-my-life">The busiest month of my life
+</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 1<span class="sub">st</span> 2023, created Sep 23<span class="sub">th</span> 2021
+</span></div><div class="item-nav"><a href="#Software-personality-traits">Software personality traits
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Created Jul 28<span class="sub">th</span> 2023
 </span></div><div class="item-nav"><a href="#Futuristic-ideas-not-being-pursued">Futuristic ideas not being pursued
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Created May 3<span class="sub">rd</span> 2023
@@ -274,11 +278,50 @@ pre
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 16<span class="sub">th</span> 2021, created Sep 11<span class="sub">th</span> 2021
 </span></div><div class="item-nav"><a href="#From-programmer-to-founder">From programmer to founder
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 16<span class="sub">th</span> 2021, created Sep 23<span class="sub">th</span> 2021
-</span></div><div class="item-nav"><a href="#The-busiest-month-of-my-life">The busiest month of my life
-</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 16<span class="sub">th</span> 2021, created Sep 23<span class="sub">th</span> 2021
 </span></div><div class="item-nav"><a href="#No-one-will-tell-you-this-business-advice">No one will tell you this business advice
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 16<span class="sub">th</span> 2021, created Sep 23<span class="sub">th</span> 2021
-</span></div></nav><div class="container"><a name="Software-personality-traits"></a><div class="idiom"><a class="permalink" href="#Software-personality-traits">Link
+</span></div></nav><div class="container"><a name="Link-between-ATM-theory-and-programming-language"></a><div class="idiom"><a class="permalink" href="#Link-between-ATM-theory-and-programming-language">Link
+</a><h1>Link between ATM theory and programming language</h1>
+<p>What kind of programming language (or programming language feature) could take advantage of our newfound <a href="#Attention-Time-Money-(ATM)">ATM Theory of Software</a>?</p>
+<h3>The keyword: <code>deprecated</code></h3>
+<p>A feature that seems related to artifact ATM cost is the <code>deprecated</code> keyword in Java and D.</p>
+<p><code>deprecated</code> is a statement that said: &quot;This has (probably) negative ATM&quot;.</p>
+<p>Another way to express this is a comment that says its discontent with something, typically:</p>
+<pre><code class="language-d">// this is bad
+// to be removed
+// inadequate for xyz reasons
+</code></pre>
+<p>But why these deprecations accumulate in real programs?</p>
+<h3><code>TODO</code> comments</h3>
+<p>Programs are littered with interesting debt statements in the form of TODO comments.</p>
+<p><code>TODO</code> is a statement that says: &quot;This change would (probably) have positive ATM&quot;. There is something &quot;to do&quot;, but why not now? Is that a certainty? The comment usually tells why waiting.</p>
+<p>If part of the cost is a statistics uncertainty (typically: &quot;extend this only if artifact end up being used&quot;), this TODO reflects that bayesian cost in its comment content usually.</p>
+<p><strong><code>deprecated</code> and <code>TODO</code> act as roughly reverse of each other, and express a statement about profitability of some software artifact: &quot;good&quot; or &quot;bad&quot;.</strong></p>
+<p>Both could be &quot;conditional&quot; and explain the key <a href="#ATM-Case-Study:-Should-you-fix-this-bug?">bayesian decision</a> behind them. Why not being able to express &quot;this needs to be removed, if xyz&quot;.</p>
+<p>We can see intuitively that &quot;to do&quot; and &quot;deprecated&quot; are actually the same, in the same way that software asset and debt are the same. <strong>Each provide an ATM statement about an artifact.</strong></p>
+<p>Moreover, <strong>the time that these annotations accumulate</strong> is also significant and tells a statement about why the ATM to do something is not that positive. For example, it may be too costly to remove a widely used abstraction.</p>
+<p><strong>Tracking TODO and deprecated over time could maybe hint at areas where value is concentrated.</strong></p>
+<h3>Proposal</h3>
+<p>The experimental proposal is such:</p>
+<p><em>A first-class TODO system that replaces both deprecated keyword and TODO comments, and is tracked over time to estimate the ATM of a particular artifact (class, function, file...)</em></p>
+<p><em>The compiler would track use of sub-artifact debt estimates, and would possibly provide an estimated ATM cost of the maintenance of that complete program.</em></p>
+<p><em>In other words: if you depend on an abstraction that is rated negatively in ATM, then your ATM cost depreciate (you will need to remove the dependency eventually), and conversely for depending on an abstraction with many positive TODO. A bit like cyclomatic complexity in a way.</em></p>
+<h3>What about perfect things without change proposal annotations?</h3>
+<p>Some classes are rather perfect and contain no TODO or deprecation. We postulate that their ATM is smaller in absolute value than the surrounding code. If it weren't, there would be change friction around it. The programmer probably anticipated this wouldn't bring value to make it good, nor to remove it.</p>
+</div><a name="The-busiest-month-of-my-life"></a><div class="idiom"><a class="permalink" href="#The-busiest-month-of-my-life">Link
+</a><h1>The busiest month of my life</h1>
+<p>In a surprising sequence of events, the month of mid-July to mid-August 2019 was <strong>a lot</strong> more eventful than usual.</p>
+<ul>
+<li>I moved and then was suspected in the murder of my former landlord, who was strangulated (I'll write about it later, hint: I wasn't the murderer).</li>
+<li>Had an brief affair with someone I later fell in love with.</li>
+<li>Had a scary one-hour relapse in <a href="#What-DPDR-feels-like">DPDR</a> because of a book.</li>
+<li>Moved flat.</li>
+<li>People helped get back into the new flat when I locked myself out, and then stole my wallet.</li>
+</ul>
+<p>All that happened while <em>I didn't really care</em> since I was in the very important process of releasing a product.</p>
+<p>Being adventurous is not exactly a goal to me ; I consider it more like a fault.
+I'm thankful such a high-intensity month did not ever repeat.</p>
+</div><a name="Software-personality-traits"></a><div class="idiom"><a class="permalink" href="#Software-personality-traits">Link
 </a><h1>Software personality traits</h1>
 <p>I want to reason on qualitative &quot;traits&quot; that software artifacts may have. Like personality studies, if we can enumerate those possible traits and find the correlation, we will maybe stumble upon a &quot;Big Five&quot; of software.</p>
 <p>Here is the method:</p>
@@ -1048,19 +1091,6 @@ What happens next is that a new personnality appears in about six month, not too
 <li>The realization that <em>tech</em> is still very much important in a <em>tech business</em>,</li>
 <li>The realization that added value has a particular aesthetic.</li>
 </ul>
-</div><a name="The-busiest-month-of-my-life"></a><div class="idiom"><a class="permalink" href="#The-busiest-month-of-my-life">Link
-</a><h1>The busiest month of my life</h1>
-<p>In a surprising sequence of events, the month of mid-July to mid-August 2019 was <strong>a lot</strong> more eventful than usual.</p>
-<ul>
-<li>I moved and then was suspected in the murder of my former landlord, who was strangulated (I'll write about it later).</li>
-<li>Had an brief affair with someone I later fell in love with.</li>
-<li>Had a scary one-hour relapse in <a href="#What-DPDR-feels-like">DPDR</a> because of a book.</li>
-<li>Moved flat.</li>
-<li>People helped get back into the new flat when I locked myself out, and then stole my wallet.</li>
-</ul>
-<p>All that happened while <em>I didn't really care</em> since I was in the very important process of releasing a product.</p>
-<p>Being adventurous is not exactly a goal to me ; I consider it more like a fault.
-I'm thankful such a high-intensity month did not ever repeat.</p>
 </div><a name="No-one-will-tell-you-this-business-advice"></a><div class="idiom"><a class="permalink" href="#No-one-will-tell-you-this-business-advice">Link
 </a><h1>No one will tell you this business advice</h1>
 <p>Making a software business does teach <a href="#From-programmer-to-founder">a few non-obvious thing</a>.</p>
