@@ -48,7 +48,9 @@ Using [Flutter](https://flutter.dev/) would **make me pause**, because Google do
 At a more fundamental level, what you depend on must be an integral part of its creator plan, strategy, and perhaps a bit of personal narrative.
 
 _Example:_
+
 _- Thekla doesn't NEED Jai: they do write a Sokoban game in it, but its success stems from The Witness (a C++ game), not from a Jai game. What will happen if the game will fail? No incentive to develop Jai at all. That completely changes if the game is a financial success!_
+
 _- u-he and Bitwig do not NEED CLAP: they funded it, but it likely pro-bono and their success builds upon unrelated other things (successful audio software). The problem is that there is a need for such a plugin format, but LV2 already exists that solve the same problem._
 
 
