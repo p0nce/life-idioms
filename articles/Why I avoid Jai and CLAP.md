@@ -76,5 +76,5 @@ _- FLStudio is **by a large amount** the most used DAW in the world, but if meas
 
 _- [Odin language](https://odin-lang.org/) doesn't have this problem._
 
-_- [Resolve](https://www.blackmagicdesign.com/products/davinciresolve) is an amazing software that has well-deserved hype, however it's not the aggressive style of hype. Sometimes the hype is well-deserved, but in many cases the style and effectiveness of people that push something should inform you. In its domain Resolve is not yet the dominating choice._
+_- [Resolve](https://www.blackmagicdesign.com/products/davinciresolve) is an amazing software that has well-deserved hype, one that you can check for yourself._
 
