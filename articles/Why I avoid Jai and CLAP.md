@@ -68,7 +68,7 @@ _Example:_
 
 _- SOUL language was presented like "the future", and discontinued the next year. Compiler was kept closed-source, probably in anticipation of that event._
 
-_- Jai has been 9 years in the making, with excitement going down as the novelty wears off. It is being kept closed-source and in private beta, either to generate excitement, or to prepare for keeping it private/abandoned._
+_- Jai has been 9 years in the making. It is being kept closed-source and in private beta, either to generate excitement, or to prepare for keeping it private/abandoned._
 
 _- CLAP is mentionned to me, but with less energy in 2023 than 2022, in the mean time LV2 is also making progress. The current hype wouldn't have happened without a marketing effort, something that LV2 never had._
 
