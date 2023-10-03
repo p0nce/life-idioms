@@ -242,8 +242,10 @@ pre
 */</style><title>this.self - A personal log</title></head><body><script src="highlight.pack.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
 <header><img id="logo" src="d-logo.svg"></img><div id="title-container"><div id="title">life-idioms
-<br><div id="sub-title">Where I try to organize ideas.</div></div></div></header><nav><div class="item-nav"><a href="#Link-between-ATM-theory-and-programming-language">Link between ATM theory and programming language
-</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Created Oct 1<span class="sub">st</span> 2023
+<br><div id="sub-title">Where I try to organize ideas.</div></div></div></header><nav><div class="item-nav"><a href="#Why-I-avoid-Jai-and-CLAP">Why I avoid Jai and CLAP
+</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Created Oct 3<span class="sub">rd</span> 2023
+</span></div><div class="item-nav"><a href="#Link-between-ATM-theory-and-programming-language">Link between ATM theory and programming language
+</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Created Oct 3<span class="sub">rd</span> 2023
 </span></div><div class="item-nav"><a href="#The-busiest-month-of-my-life">The busiest month of my life
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 1<span class="sub">st</span> 2023, created Sep 23<span class="sub">th</span> 2021
 </span></div><div class="item-nav"><a href="#Software-personality-traits">Software personality traits
@@ -270,9 +272,9 @@ pre
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Created Jul 23<span class="sub">th</span> 2022
 </span></div><div class="item-nav"><a href="#Attention-Time-Money-(ATM)">Attention Time Money (ATM)
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 20<span class="sub">th</span> 2021, created Mar 6<span class="sub">th</span> 2021
-</span></div><div class="item-nav"><a href="#Thoughts-should-pay-for-themselves">Thoughts should pay for themselves
-</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 20<span class="sub">th</span> 2021, created Oct 16<span class="sub">th</span> 2021
 </span></div><div class="item-nav"><a href="#Who-owns-software&#x3F;">Who owns software&#x3F;
+</a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 20<span class="sub">th</span> 2021, created Oct 16<span class="sub">th</span> 2021
+</span></div><div class="item-nav"><a href="#Thoughts-should-pay-for-themselves">Thoughts should pay for themselves
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 20<span class="sub">th</span> 2021, created Oct 16<span class="sub">th</span> 2021
 </span></div><div class="item-nav"><a href="#What-DPDR-feels-like">What DPDR feels like
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 16<span class="sub">th</span> 2021, created Sep 11<span class="sub">th</span> 2021
@@ -280,7 +282,52 @@ pre
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 16<span class="sub">th</span> 2021, created Sep 23<span class="sub">th</span> 2021
 </span></div><div class="item-nav"><a href="#No-one-will-tell-you-this-business-advice">No one will tell you this business advice
 </a><span style=" color:rgb(158,158,158); font-size: 0.7em; float: right;"> Modified Oct 16<span class="sub">th</span> 2021, created Sep 23<span class="sub">th</span> 2021
-</span></div></nav><div class="container"><a name="Link-between-ATM-theory-and-programming-language"></a><div class="idiom"><a class="permalink" href="#Link-between-ATM-theory-and-programming-language">Link
+</span></div></nav><div class="container"><a name="Why-I-avoid-Jai-and-CLAP"></a><div class="idiom"><a class="permalink" href="#Why-I-avoid-Jai-and-CLAP">Link
+</a><h1>Why I avoid Jai and CLAP</h1>
+<p><em>Disclaimer: I don't mean to pick on people or things. For the record I predicted the demise of start-ups that were bought for many, many times their initial investments. here I describe my 3 criterions to judge if I will depend on some piece of software to build upon.</em></p>
+<p>It seems &quot;obvious&quot; to me that using <a href="https://en.wikipedia.org/wiki/Jonathan_Blow#Jai_language">Jai</a> (the programming language) or <a href="https://en.wikipedia.org/wiki/CLever_Audio_Plug-in">CLAP</a> (an open-source audio plugin format) are rather risky choices (3 out of 3).</p>
+<p>On the contrary, using <a href="https://dlang.org/">D language</a> is seen as a big risk in my circles, even though by my criterions it's not (0 out of 3).</p>
+<p>A small business like mine shouldn't take unsubstantiated bets. You cannot build on sand. I'll try to dissecate my reasoning for how I consider something to be sand or concrete.</p>
+<p>But what if I was just reasoning out my desires and giving them a varnish of rationality? This is a possibility, so let's analyze it.</p>
+<h2>Criterion 1. Length of money runway</h2>
+<p>Things that last need almost <em>boundless funding</em> compared to things that are just made as a one-off.</p>
+<ul>
+<li><a href="https://fr.wikipedia.org/wiki/LV2_(plugin)">LV2</a> existed since <em>2006</em>.</li>
+<li><a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Python</a>, a wildly successful language, appeared in <em>1991</em>.</li>
+</ul>
+<p>This kind of longevity takes a lot of dedication and money.</p>
+<p>Things that last for a while are typically made by:</p>
+<ul>
+<li>Labs with government funding (eg: Faust, Postgres)</li>
+<li>Successful product paying virtually indefinitely for its implementation (Dplug)</li>
+<li>Continued effort as <em>durable</em> personal itch, with BigCo employment (VisualD)</li>
+<li>A business which is not a &quot;startup&quot;, and somehow benefits from &quot;community&quot;</li>
+</ul>
+<p>It's important to know how likely it is that the people <em>building</em> the artifact you would depend on will be forced to stop, due to lack of money.</p>
+<p><em>Example:</em></p>
+<p><em>- SOUL was made by a money-loosing start-up. The start-up (predictably) died and SOUL was buried, since not making money.</em></p>
+<p><em>- Thekla has funding because of The Witness, but the astute observer will see that both this last game and their last last game almost bankrupted the company. If they also go near-bankrupt for this next game, how will they find funding to develop Jai on top of it? On top of it, games are one of the hardest market to be in.</em></p>
+<p><em>- CLAP is mainly made by a contractor. Whatever the intention, if the money dries up, there might not be any reason for a contractor to keep working. To put it politely, audio software companies are more interested by piling up money than giving it to open-source. If they loved open source, they would have funded and supported LV2 instead. Meanwhile, LV2 survived for years and years while being maintained.</em></p>
+<p>Whatever is a moneymaker will probably get maintained and <strong>blossom</strong>, even in complete absence of passion.</p>
+<h2>Criterion 2. Intrinsic need</h2>
+<p>Using <a href="https://flutter.dev/">Flutter</a> would <strong>make me pause</strong>, because Google doesn't really NEED it to operate. For what it's worth, it could invent an even superior UI library and abandon this one, leaving you with debt. Google has unlimited funding, but Flutter will be dumped if it's not strategic to do.</p>
+<p>At a more fundamental level, what you depend on must be an integral part of its creator plan, strategy, and perhaps a bit of personal narrative.</p>
+<p><em>Example:</em>
+<em>- Thekla doesn't NEED Jai: they do write a Sokoban game in it, but its success stems from The Witness (a C++ game), not from a Jai game. What will happen if the game will fail? No incentive to develop Jai at all. That completely changes if the game is a financial success!</em>
+<em>- u-he and Bitwig do not NEED CLAP: they funded it, but it likely pro-bono and their success builds upon unrelated other things (successful audio software). The problem is that there is a need for such a plugin format, but LV2 already exists that solve the same problem.</em></p>
+<h2>Criterion 3. Window of hype</h2>
+<p>It is important to correct for hype.</p>
+<p>Typically, people ask others &quot;why not use X?&quot; for a few years during a &quot;window of hype&quot;. It can even get tiring. For example D people being pressured to rewrite in Rust, as if the language was 100% independent of the thing being made.</p>
+<p>What the heck? I mean, this technique is exactly the same as Instagram pyramidal NFT schemes.</p>
+<p>I've found that <em>hype</em> is a great indicator of something that is likely overrated and unsustainable. Things that are good (like PHP or FLStudio) instead <strong>quietly powers the world</strong> without too much noise. The presence of noise instead indicate they are not going to be mainstay, or they are goig to only appeal to higher-class people.</p>
+<p><em>Example:</em></p>
+<p><em>- SOUL language was presented like &quot;the future&quot;, and discontinued the next year. Compiler was kept closed-source, probably in anticipation of that event.</em></p>
+<p><em>- Jai has been 9 years in the making, with excitement going down as the novelty wears off. It is being kept closed-source and in private beta, either to generate excitement, or to prepare for keeping it private/abandoned.</em></p>
+<p><em>- CLAP is mentionned to me, but with less energy in 2023 than 2022, in the mean time LV2 is also making progress. The current hype wouldn't have happened without a marketing effort, something that LV2 never had.</em></p>
+<p><em>- FLStudio is <strong>by a large amount</strong> the most used DAW in the world, but if measured by Internet noise you would think it is Ableton Live.</em></p>
+<p><em>- <a href="https://odin-lang.org/">Odin language</a> doesn't have this problem.</em></p>
+<p><em>- <a href="https://www.blackmagicdesign.com/products/davinciresolve">Resolve</a> is an amazing software that has well-deserved hype, however it's not the aggressive style of hype. Sometimes the hype is well-deserved, but in many cases the style and effectiveness of people that push something should inform you. In its domain Resolve is not yet the dominating choice.</em></p>
+</div><a name="Link-between-ATM-theory-and-programming-language"></a><div class="idiom"><a class="permalink" href="#Link-between-ATM-theory-and-programming-language">Link
 </a><h1>Link between ATM theory and programming language</h1>
 <p>What kind of programming language (or programming language feature) could take advantage of our newfound <a href="#Attention-Time-Money-(ATM)">ATM Theory of Software</a>?</p>
 <h3>The keyword: <code>deprecated</code></h3>
@@ -301,7 +348,7 @@ pre
 <p>We can see intuitively that &quot;to do&quot; and &quot;deprecated&quot; are actually the same, in the same way that software asset and debt are the same. <strong>Each provide an ATM statement about an artifact.</strong></p>
 <p>Moreover, <strong>the time that these annotations accumulate</strong> is also significant and tells a statement about why the ATM to do something is not that positive. For example, it may be too costly to remove a widely used abstraction.</p>
 <p><strong>Tracking TODO and deprecated over time could maybe hint at areas where value is concentrated.</strong></p>
-<h3>Proposal</h3>
+<h3>Language Proposal</h3>
 <p>The experimental proposal is such:</p>
 <p><em>A first-class TODO system that replaces both deprecated keyword and TODO comments, and is tracked over time to estimate the ATM of a particular artifact (class, function, file...)</em></p>
 <p><em>The compiler would track use of sub-artifact debt estimates, and would possibly provide an estimated ATM cost of the maintenance of that complete program.</em></p>
@@ -926,23 +973,6 @@ Given alternative A and B, <strong>the alternative that would maximize ATM would
 <p>See: <a href="#Software-Artifacts-as-elementary-unit">Software Artifacts as elementary units</a></p>
 <p>Moreover, and more critically, ATM is the amount of current and future value the software would bring to <strong>everyone</strong>, but this ATM is splitted, very often unevenly, amongst several entities. Whether a software artifact is a debt or an asset depends upon who is considered as owner.</p>
 <p>See: <a href="#Who-owns-software?">Who owns software?</a></p>
-</div><a name="Thoughts-should-pay-for-themselves"></a><div class="idiom"><a class="permalink" href="#Thoughts-should-pay-for-themselves">Link
-</a><h1>Thoughts should pay for themselves</h1>
-<ol>
-<li><p>In an ideal world, all software in existence would have positive <a href="#Attention-Time-Money-(ATM)">ATM</a>.</p>
-</li>
-<li><p>Contrarily Software with negative ATM is <em>debt</em> and wouldn't exist in that ideal world. Consequently, software debt doesn't <em>deserve to exist</em> (in the same way that there are no stocks with negative values).</p>
-</li>
-<li><p>If it were found that organized thoughts (and books) follow a similar ATM economics as software, then they also wouldn't deserve to exist.</p>
-</li>
-<li><p>The very act of forming and maintaining <em>mental debt</em> (instead of <em>mental assets</em>) would be a net loss to the individual ; in the same way that negative ATM software is a net loss to society in general.</p>
-</li>
-<li><p>In other words: not all books deserve to be written, and not all thoughts deserve to be formed. And there will be interests to pay on them too: bad books being read, or bad thoughts being maintained.</p>
-</li>
-<li><p>In the same ways that ATM is distributed across everyone (even negatively), maintaining mental debt can be efficient for society <em>as a whole</em>, just not for the open that holds that debt.</p>
-</li>
-</ol>
-<p>Strangely my conclusion is at odds with the premise.</p>
 </div><a name="Who-owns-software&#x3F;"></a><div class="idiom"><a class="permalink" href="#Who-owns-software&#x3F;">Link
 </a><h1>Who owns the software?</h1>
 <p>Once we have the concept of <a href="#Attention-Time-Money-(ATM)">ATM</a> we can define the concept of software ownership more precisely.</p>
@@ -1029,6 +1059,23 @@ Walter doesn't know if <code>A</code> will be an asset (positive ATM), but he kn
 </code></pre>
 <p>As Walter knows that its own rate on the market is $500/day, he hopes to have a good estimate of <code>ATM(A)</code> before 2 days, so he knows whether to abandon the project or not.</p>
 <p>Obviously, a measure of &quot;ownership&quot; would need to account for the possibility of negative ATM. I'm not sure if a zero ATM means no ownership either, of if the whole concept of &quot;ownership&quot; is moot.</p>
+</div><a name="Thoughts-should-pay-for-themselves"></a><div class="idiom"><a class="permalink" href="#Thoughts-should-pay-for-themselves">Link
+</a><h1>Thoughts should pay for themselves</h1>
+<ol>
+<li><p>In an ideal world, all software in existence would have positive <a href="#Attention-Time-Money-(ATM)">ATM</a>.</p>
+</li>
+<li><p>Contrarily Software with negative ATM is <em>debt</em> and wouldn't exist in that ideal world. Consequently, software debt doesn't <em>deserve to exist</em> (in the same way that there are no stocks with negative values).</p>
+</li>
+<li><p>If it were found that organized thoughts (and books) follow a similar ATM economics as software, then they also wouldn't deserve to exist.</p>
+</li>
+<li><p>The very act of forming and maintaining <em>mental debt</em> (instead of <em>mental assets</em>) would be a net loss to the individual ; in the same way that negative ATM software is a net loss to society in general.</p>
+</li>
+<li><p>In other words: not all books deserve to be written, and not all thoughts deserve to be formed. And there will be interests to pay on them too: bad books being read, or bad thoughts being maintained.</p>
+</li>
+<li><p>In the same ways that ATM is distributed across everyone (even negatively), maintaining mental debt can be efficient for society <em>as a whole</em>, just not for the open that holds that debt.</p>
+</li>
+</ol>
+<p>Strangely my conclusion is at odds with the premise.</p>
 </div><a name="What-DPDR-feels-like"></a><div class="idiom"><a class="permalink" href="#What-DPDR-feels-like">Link
 </a><h1>What DPDR feels like</h1>
 <p><em>DICLAIMER: I FORMALLY DECLINE RESPONSIBILITY FOR ANY HARM THAT COULD HAPPEN FOLLOWING THE READ OF THE FOLLOWING ARTICLE. Close this page now. This article isn't meant for anyone to read. You don't want to know. I'm only trying to <a href="#On-being-a-former-sufferer-of-DPDR">remember</a>.</em></p>
