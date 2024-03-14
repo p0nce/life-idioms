@@ -2,7 +2,7 @@
 
 **DICLAIMER: I'm not a physiologist, and do not work in medicine. Do not start new addictions. I'm just dabbling. The reality is probably more complex.**
 
-In research of diagonalization, I feel that it can be helpful to identify body compounds by their imprint, in order to try to "invert" their effects on judgement.
+In research of [diagonalization](#Brain-Tools:-Diagonalization-and-Eigenvectors), I feel that it can be helpful to identify body compounds by their imprint, in order to try to "invert" their effects on judgement.
 
 Often the idea is to eat chemical precursors to increase the quantity effect of the compound. 
 
@@ -51,7 +51,13 @@ General quantity of inflammation can be lowered with Chinese cabbage (for exampl
 Instead, it can be increased with carbs, such as bread/pasta, which feels much worse.
 
 
+## GABA
+
+The effect of increased GABA can be felt after yoga. I will probably need to find the particular stretching practice that does it the most to feel it better.
+It seems to increase sleep quality easily, much like going into Alpha State.
+
+
 ## Do you know any others?
 
-I'd like to hear ways to distinguish norepinefrine, GABA, glutamate, acetylcholine...
+I'd like to hear ways to distinguish norepinefrine, glutamate, acetylcholine...
 It is also possible I'm mistaking one chemicals for another.
