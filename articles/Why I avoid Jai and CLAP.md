@@ -1,5 +1,6 @@
 # Why I avoid Jai and CLAP
 
+_Epilogue: I implemented CLAP later on so this article can also be seen as a form of post-hoc reasoning._
 
 _Disclaimer: I don't mean to pick on people or things. For the record I predicted the demise of start-ups that were bought for many, many times their initial investments. here I describe my 3 criterions to judge if I will depend on some piece of software to build upon._
 
